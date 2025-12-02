@@ -89,9 +89,12 @@ Find your personalized IPs at: [my.nextdns.io](https://my.nextdns.io) → **Setu
 Some modern routers support encrypted DNS:
 
 ### ASUS (Merlin firmware):
-1. Go to WAN → DNS Privacy
-2. Set Mode to **DoT/DoH**
-3. Add server: `https://dns.nextdns.io/abc123` (use your config ID)
+1. Go to **WAN** → **Internet Connection**
+2. Scroll to **WAN DNS Setting**
+3. Click **Assign** next to DNS Server
+4. Enter your NextDNS IPs (find them at [my.nextdns.io](https://my.nextdns.io) → Setup → Routers)
+5. Set **Prevent client auto DoH** → **Yes** (blocks devices bypassing your DNS)
+6. Optional: Set **DNS Privacy Protocol** → **DNS-over-TLS (DoT)** and add server: `dns.nextdns.io`
 
 ### pfSense / OPNsense:
 1. Services → DNS Resolver → Custom Options
