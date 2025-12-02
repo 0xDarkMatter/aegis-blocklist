@@ -1,0 +1,33 @@
+# Dating Apps
+# Grade: Optional (not in standard grades)
+# Last updated: 2025-11-30
+#
+# Mainstream dating apps - may be age-appropriate for older teens
+# Block at parent discretion
+
+# === Major Dating Apps ===
+tinder.com
+bumble.com
+hinge.co
+match.com
+okcupid.com
+pof.com
+eharmony.com
+zoosk.com
+coffee-meets-bagel.com
+happn.com
+badoo.com
+lovoo.com
+meetme.com
+
+# === LGBTQ+ Dating ===
+grindr.com
+scruff.com
+jackd.com
+her.app
+taimi.com
+
+# === Hookup-Focused ===
+pureapp.us
+feeld.co
+3fun.co

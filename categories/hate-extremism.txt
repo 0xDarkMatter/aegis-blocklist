@@ -1,0 +1,62 @@
+# Hate and Extremism - White Nationalism, Neo-Nazi, Alt-Right
+# Grade: Core (Essential)
+# Last updated: 2025-11-30
+#
+# Explicit hate content, white supremacist ideology
+# Sources: SPLC, ADL hate group tracking
+
+# === Neo-Nazi / White Supremacist ===
+stormfront.org
+dailystormer.name
+dailystormer.su
+dailystormer.in
+dailystormer.red
+dailystormer.lol
+nationalsocialism.com
+nazi.org
+nsm88.org
+bloodandhonour.com
+combat18.org
+
+# === White Nationalist ===
+amren.com
+vdare.com
+theoccidentalobserver.net
+counter-currents.com
+radixjournal.com
+identitydixie.com
+arktos.com
+altright.com
+therightstuff.biz
+americanrenaissance.com
+
+# === Accelerationist / Extreme ===
+8kun.top
+8chan.moe
+8chan.se
+endchan.net
+endchan.org
+kiwifarms.net
+kiwifarms.is
+kiwifarms.ru
+kiwifarms.st
+
+# === Alt-Right Media ===
+gab.com
+gab.ai
+gettr.com
+parler.com
+truthsocial.com
+rumble.com
+bitchute.com
+odysee.com
+
+# === Conspiracy / QAnon Adjacent ===
+infowars.com
+prisonplanet.com
+newswars.com
+banned.video
+naturalnews.com
+beforeitsnews.com
+zerohedge.com
+thegatewaypundit.com

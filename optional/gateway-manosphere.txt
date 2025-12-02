@@ -1,0 +1,25 @@
+# Gateway Manosphere Content
+# Grade: Optional (not in standard grades)
+# Last updated: 2025-11-30
+#
+# "Alpha male" influencers and gateway content to manosphere
+# Controversial - some consider educational, included as optional toggle
+
+# === Influencer Fan Sites ===
+andrewtate.com
+cobratate.com
+therealworld.com
+hustlersuniversity.com
+
+# === Alpha Male / Self-Improvement (Manosphere-Adjacent) ===
+alpham.com
+menfluential.com
+mantelligence.com
+masculineprofiles.com
+
+# === Jordan Peterson (Controversial - Optional) ===
+jordanbpeterson.com
+dailywire.com
+
+# === Controversial Commentary ===
+freshandfit.com

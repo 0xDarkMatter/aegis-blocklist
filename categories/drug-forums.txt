@@ -1,0 +1,46 @@
+# Drug Discussion Forums and Marketplaces
+# Block sites promoting drug use, sales, or detailed usage instructions
+#
+# Sources:
+# - Law enforcement public reports
+# - Academic research on drug-related online communities
+# - DEA public awareness materials
+# - Manual research and verification
+#
+# Note: Blocklist Project removed as source due to homepage linking to
+# potentially malicious domain (blocklist.site flagged by ESET)
+#
+# Note: Dark web marketplaces (.onion) are not included as they require
+# Tor browser access which should be blocked separately.
+# This list focuses on clearnet sites accessible via regular browsers.
+#
+# Last updated: 2025-11-30
+
+# Drug information/forum sites
+erowid.org
+bluelight.org
+drugs-forum.com
+tripsit.me
+psychonautwiki.org
+
+# Kratom and research chemical vendors
+kratomspot.com
+happyhippo.com
+kratomcapsules.com
+
+# Synthetic drug information
+# Note: Many operate through social media now
+
+# Harm reduction sites (controversial - may keep unblocked for safety)
+# dancesafe.org (provides drug testing, harm reduction)
+# Consider parental discussion rather than blocking these
+
+# Clearnet drug markets (frequently changing)
+# Note: Most legitimate-looking pharmacy sites selling controlled substances
+# without prescription are scams and covered in crypto-scams.txt
+
+# Cannabis sites (legal status varies by jurisdiction)
+# Blocking these is optional based on family policy
+# leafly.com
+# weedmaps.com
+# High Times and similar magazines

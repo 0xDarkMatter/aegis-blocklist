@@ -1,0 +1,32 @@
+# Academic Tools with Cheating Potential
+# Grade: Optional (not in standard grades)
+# Last updated: 2025-11-30
+#
+# Tools with legitimate educational uses but high cheating potential
+# Block at parent discretion
+
+# === Homework Help (High Cheating Risk) ===
+chegg.com
+coursehero.com
+quizlet.com
+studyblue.com
+
+# === AI Writing Tools ===
+quillbot.com
+grammarly.com
+jasper.ai
+copy.ai
+rytr.me
+writesonic.com
+jenni.ai
+wordtune.com
+hyperwrite.ai
+notion.ai
+sudowrite.com
+
+# === Essay/Paper Tools ===
+scribbr.com
+cite4me.org
+easybib.com
+mybib.com
+citationmachine.net

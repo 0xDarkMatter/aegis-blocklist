@@ -1,0 +1,47 @@
+# Australian Gambling Sites
+# Grade: Standard
+# Last updated: 2025-11-30
+#
+# Licensed Australian bookmakers and betting sites
+# NOT blocked by NextDNS gambling category (tested 2025-11-30)
+
+# === Major Australian Bookmakers ===
+sportsbet.com.au
+tab.com.au
+ladbrokes.com.au
+neds.com.au
+pointsbet.com.au
+betfair.com.au
+unibet.com.au
+bet365.com.au
+palmerbet.com
+bluebet.com.au
+beteasy.com.au
+topbetta.com.au
+picklebet.com
+dabble.com.au
+betr.com.au
+betdeluxe.com.au
+boombet.com.au
+colossalbet.com.au
+elitebet.com.au
+madbookie.com.au
+playup.com.au
+sportsbetting.com.au
+titanbet.com.au
+topsport.com.au
+bet777.com.au
+robwaterhouse.com
+vicbet.com.au
+
+# === Racing ===
+racing.com
+racenet.com.au
+punters.com.au
+racingandports.com.au
+racingpulse.com.au
+
+# === Lotteries ===
+thelott.com
+ozlotteries.com
+lottoland.com.au

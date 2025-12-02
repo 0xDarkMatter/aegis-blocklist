@@ -1,0 +1,41 @@
+# Self-Harm, Pro-Anorexia, Eating Disorders, Suicide
+# Grade: Core (Essential)
+# Last updated: 2025-11-30
+#
+# CRITICAL SAFETY: Life-threatening content
+# These sites glorify eating disorders, self-harm, and suicide methods
+
+# === Pro-Anorexia / Eating Disorder Communities ===
+# myproana.com - REMOVED: domain no longer live (2025-12)
+skinny-gossip.com
+prettythin.com
+prothinspo.com
+thinspiration.com
+thinspo.com
+proana.cc
+anabootcamp.com
+pro-ana.net
+pro-ana.us
+thinspo.net
+thinspirationpics.com
+thinspire.com
+starving-for-perfection.com
+ana-mia.com
+anamia.net
+
+# === Self-Harm Communities ===
+selfharm.net
+self-injury.net
+cutting.net
+selfharmforum.com
+selfinjury.com
+
+# === Suicide Methods / Encouragement ===
+# Note: These domains are documented harms - not help sites
+sanctionedsuicide.com
+lostallhope.com
+suicideforum.net
+suicidemethods.net
+# Pro-euthanasia sites promoting methods
+exitinternational.net
+peacefulpill.com

@@ -1,0 +1,101 @@
+# Piracy and Torrent Sites
+# Block illegal download sites, torrent trackers, and piracy portals
+#
+# Sources:
+# - Parental control guides (AirDroid, FlashGet, FindMyKids)
+# - Wikipedia articles on torrent sites
+# - TorrentFreak reporting on active sites
+# - Manual research and verification
+#
+# Note: Blocklist Project removed as source due to homepage linking to
+# potentially malicious domain (blocklist.site flagged by ESET)
+#
+# Last updated: 2025-11-30
+
+# Major torrent sites
+1337x.to
+1337x.st
+1337x.gd
+thepiratebay.org
+piratebay.live
+pirateproxy.live
+rarbg.to
+torrentz2.eu
+torrentz2.me
+nyaa.si
+kickass.to
+katcr.co
+limetorrents.info
+torlock.com
+torrentfunk.com
+idope.se
+magnetdl.com
+zooqle.com
+eztv.re
+ettv.tv
+yts.am
+yts.lt
+rutracker.org
+rutor.info
+nnmclub.to
+tntvillage.scambioetico.org
+
+# Streaming piracy
+fmovies.to
+fmovies.wtf
+123movies.to
+123movieshub.to
+123moviesgo.tv
+putlocker.vip
+putlockers.fm
+gostream.site
+gomovies.to
+solarmovie.to
+soap2day.to
+hdmovie2.com
+moviesjoy.to
+flixtor.to
+popcorntime.io
+
+# Software piracy
+cracksurl.com
+getintopc.com
+igetintopc.com
+crackshash.com
+piratewares.com
+downloadpirate.com
+torrentday.com
+alphawarez.ru
+anycracks.com
+bestcracks.net
+4realtorrentz.com
+freesoftlinks.com
+
+# Music piracy
+mp3paw.com
+mp3juices.cc
+mp3skull.com
+free-mp3-download.net
+beemp3s.org
+
+# Game piracy
+fitgirl-repacks.site
+skidrowreloaded.com
+igggames.com
+ovagames.com
+steamunlocked.net
+
+# Anime/manga piracy
+gogoanime.pe
+animekisa.tv
+9anime.to
+kissanime.ru
+mangadex.org
+manganelo.com
+
+# Book piracy
+libgen.rs
+libgen.is
+z-lib.org
+b-ok.cc
+sci-hub.se

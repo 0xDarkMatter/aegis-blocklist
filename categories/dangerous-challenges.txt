@@ -1,0 +1,43 @@
+# Dangerous Viral Challenges
+# Block sites promoting dangerous internet challenges
+#
+# Sources:
+# - McAfee Family Safety blog on TikTok challenges
+# - Bitdefender research on Blackout Challenge
+# - CDC data on choking game deaths
+# - Omega Law Group safety analysis (2024)
+#
+# Note: Most dangerous challenges spread through social media platforms
+# (TikTok, YouTube, Instagram) rather than dedicated websites.
+# Consider platform-level controls (TikTok Family Pairing, YouTube Restricted Mode)
+# in addition to DNS blocking.
+#
+# This category focuses on sites that:
+# - Aggregate/promote dangerous challenges
+# - Provide instructions for harmful activities
+# - Glorify or encourage participation
+#
+# Last updated: 2025-11-30
+
+# Challenge aggregator sites
+# Note: Most are social media based, few dedicated domains exist
+
+# Pro-eating disorder and body challenge sites
+# (See self-harm.txt for more comprehensive list)
+
+# Dangerous game wikis/guides
+# Some wiki sites document challenges - blocking specific pages not possible via DNS
+
+# Fire challenge promotion
+# Most content on video platforms
+
+# Recommendation:
+# For TikTok-based challenges, use:
+# - TikTok Family Pairing settings
+# - TikTok Restricted Mode
+# - Screen time limits on TikTok app
+#
+# For YouTube:
+# - YouTube Restricted Mode
+# - YouTube Kids app for younger children
+# - YouTube Supervised accounts

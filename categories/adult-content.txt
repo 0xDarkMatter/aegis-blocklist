@@ -1,0 +1,86 @@
+# Adult Content - Niche Sites Often Missed by Blocklists
+# Grade: Standard
+# Last updated: 2025-12-01
+#
+# Major porn sites and niche adult content that mainstream
+# blocklists (NextDNS, etc.) sometimes don't catch
+
+# === Major Tube Sites ===
+# Often not in default blocklists or use CDN domains
+pornhub.com
+xvideos.com
+xnxx.com
+xhamster.com
+redtube.com
+youporn.com
+spankbang.com
+eporner.com
+tnaflix.com
+tube8.com
+beeg.com
+thumbzilla.com
+
+# === Premium/Paysite Networks ===
+brazzers.com
+realitykings.com
+bangbros.com
+naughtyamerica.com
+mofos.com
+digitalplayground.com
+wicked.com
+vixen.com
+blacked.com
+tushy.com
+deeper.com
+
+# === Creator Platforms ===
+onlyfans.com
+fansly.com
+loyalfans.com
+manyvids.com
+clips4sale.com
+iwantclips.com
+modelhub.com
+pornhubpremium.com
+
+# === Hentai/Anime ===
+hanime.tv
+hentaihaven.xxx
+nhentai.net
+e-hentai.org
+exhentai.org
+hitomi.la
+tsumino.com
+fakku.net
+rule34.xxx
+rule34.paheal.net
+gelbooru.com
+danbooru.donmai.us
+
+# === Live Cams ===
+chaturbate.com
+livejasmin.com
+stripchat.com
+bongacams.com
+camsoda.com
+cam4.com
+myfreecams.com
+streamate.com
+flirt4free.com
+imlive.com
+
+# === Forums/Communities ===
+sexyforums.com
+sexforum.com
+xnxx.com/forum
+planetsuzy.org
+phun.org
+freeones.com
+thefappeningblog.com
+
+# === Shock/Extreme Content ===
+# Borderline gore - often mixed with adult
+efukt.com
+crazyshit.com
+kaotic.com
+bestgore.fun

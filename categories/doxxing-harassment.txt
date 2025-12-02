@@ -1,0 +1,45 @@
+# Doxxing and Harassment Forums
+# Block sites known for coordinated harassment, doxxing, and swatting
+#
+# Sources:
+# - NBC News reporting on Kiwi Farms (2022)
+# - Wikipedia article on Kiwi Farms
+# - Change.org petition research on harassment sites
+# - Academic research: "No Easy Way Out: Effectiveness of Deplatforming" (arXiv:2304.07037)
+#
+# Note: These sites frequently change domains when blocked by providers.
+# Monitor for new domains regularly.
+#
+# Last updated: 2025-11-30
+
+# Major harassment forums
+kiwifarms.net
+kiwifarms.ru
+kiwifarms.is
+kiwifarms.top
+kiwifarms.cc
+kiwifarms.st
+lolcow.farm
+lolcow.wiki
+gurugossiper.com
+prettyuglylittleliar.net
+onionfarms.com
+
+# Chan boards with harassment history
+8kun.top
+8ch.net
+8chan.moe
+endchan.org
+
+# Doxxing repositories
+doxbin.com
+doxbin.org
+skidbin.net
+
+# Swatting coordination
+# Note: Most swatting coordination happens on private channels
+# These are known public-facing sites
+
+# Revenge/gossip sites
+thedirty.com
+isanyoneup.com

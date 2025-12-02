@@ -1,0 +1,57 @@
+# International Gambling Sites
+# Grade: Standard
+# Last updated: 2025-11-30
+#
+# Major international gambling sites
+
+# === Major International ===
+bet365.com
+williamhill.com
+paddypower.com
+betway.com
+betfair.com
+888poker.com
+888casino.com
+888sport.com
+pokerstars.com
+pokerstars.net
+partypoker.com
+partycasino.com
+betfred.com
+ladbrokes.com
+coral.co.uk
+skybet.com
+betvictor.com
+unibet.com
+bwin.com
+bodog.com
+bovada.lv
+betonline.ag
+
+# === Casinos ===
+casinocom.com
+leovegas.com
+mrgreen.com
+casumo.com
+betsson.com
+karamba.com
+jackpotcity.com
+spinpalace.com
+royalvegas.com
+32red.com
+allslotscasino.com
+riverbelle.com
+luckydays.com
+royalpanda.com
+playojo.com
+videoslots.com
+slotsmillion.com
+
+# === Sports Betting ===
+draftkings.com
+fanduel.com
+betmgm.com
+caesars.com
+pointsbet.com
+barstoolsportsbook.com
+wynnbet.com

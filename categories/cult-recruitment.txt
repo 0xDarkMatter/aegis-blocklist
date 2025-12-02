@@ -1,0 +1,57 @@
+# Cult and Extremist Recruitment Sites
+# Block sites used for radicalization and cult recruitment of minors
+#
+# Sources:
+# - Tech Against Terrorism (https://techagainstterrorism.org/)
+# - Europol reports on online radicalization
+# - UNODC Handbook on Children and Violent Extremism
+# - Institute for Strategic Dialogue (ISD) research
+# - Internet Matters UK (https://www.internetmatters.org/)
+#
+# Note: This is a sensitive category. Most radicalization happens through:
+# - Social media algorithms (YouTube, TikTok, Instagram)
+# - Gaming platforms (Discord servers, in-game chat)
+# - Encrypted messaging apps (Telegram channels)
+#
+# DNS blocking alone is insufficient - requires parental conversation
+# and monitoring of social media activity.
+#
+# Last updated: 2025-11-30
+
+# Known extremist forums
+# Note: Major platforms like 8kun already in doxxing-harassment.txt
+stormfront.org
+dailystormer.su
+dailystormer.name
+dailystormer.in
+
+# Extremist content aggregators
+bitchute.com
+odysee.com
+rumble.com
+# Note: These platforms host some legitimate content but also extremist material
+# Consider using their built-in content filters instead of full blocks
+
+# Cult information sites (recruitment)
+# Note: Many cults use mainstream platforms
+# Some examples of known problematic groups' sites:
+# (Not listing specific religious groups to avoid controversy)
+
+# Conspiracy theory radicalization
+# (These can lead to real-world violence)
+infowars.com
+naturalnews.com
+beforeitsnews.com
+
+# Accelerationist content
+# (Promoting societal collapse)
+# Most hosted on chan boards already covered
+
+# Incel/blackpill recruitment
+# (See incel-blackpill.txt for comprehensive list)
+
+# Resources for parents:
+# - Internet Matters (internetmatters.org) - free advice
+# - Talk to your children about what they see online
+# - Monitor Discord servers and Telegram channels they join
+# - Watch for behavioral changes

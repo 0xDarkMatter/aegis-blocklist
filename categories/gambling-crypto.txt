@@ -1,0 +1,47 @@
+# Crypto Gambling Sites
+# Grade: Standard
+# Last updated: 2025-11-30
+#
+# Cryptocurrency casinos and betting - often unregulated
+
+# === Major Crypto Casinos ===
+stake.com
+stake.us
+roobet.com
+bc.game
+cloudbet.com
+bitcasino.io
+fortunejack.com
+mbitcasino.com
+bitstarz.com
+crashino.com
+500casino.com
+bets.io
+duelbits.com
+rollbit.com
+gamdom.com
+primedice.com
+bitsler.com
+trustdice.win
+betfury.io
+wolfbet.com
+luckyblock.com
+metaspins.com
+chipstars.bet
+
+# === Crypto Sports Betting ===
+sportsbet.io
+betplay.io
+thunderpick.io
+nitrogen.eu
+nitrobetting.eu
+
+# === Skin/CSGO Gambling ===
+csgoroll.com
+csgoluck.com
+csgobig.com
+csgoempire.com
+wtfskins.com
+skinhub.com
+gamdom.com
+clash.gg

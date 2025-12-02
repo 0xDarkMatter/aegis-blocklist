@@ -1,0 +1,31 @@
+# Incel / Blackpill / Lookism Forums
+# Grade: Core (Essential)
+# Last updated: 2025-11-30
+#
+# Violent incel ideology and blackpill content
+# Source: Academic research on toxic online communities
+
+# === Major Incel Forums ===
+incels.is
+incels.co
+incels.net
+incels.me
+incels.wiki
+
+# === Lookism / Looksmaxxing Forums ===
+looksmax.org
+looksmax.me
+looksmax.co
+lookism.net
+lookism.me
+
+# === Blackpill Communities ===
+blackpill.club
+blackpill.org
+theblackpill.com
+
+# === Related Toxic Communities ===
+sluthate.com
+puahate.com
+love-shy.com
+foreveralone.net

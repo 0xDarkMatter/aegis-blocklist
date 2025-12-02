@@ -1,0 +1,58 @@
+# Age Verification Bypass Tools
+# Block sites that help minors bypass age restrictions
+#
+# Sources:
+# - Parental control software documentation
+# - Online safety research
+#
+# Categories covered:
+# - Fake ID generators
+# - Age verification bypass tutorials
+# - "How to appear older" guides
+# - Parental control circumvention tools
+#
+# Note: Many bypass techniques are shared on Reddit, YouTube, and social media
+# rather than dedicated websites. Consider platform-level controls.
+#
+# Last updated: 2025-11-30
+
+# Fake ID sites
+# Note: Providing specific domains could facilitate illegal activity
+# These sites are frequently seized by law enforcement
+# General patterns to watch for:
+# - *fakeid*.com
+# - *idgod*.com
+# - *noveltyid*.com
+
+# Age restriction bypass
+# Most are on Reddit (r/teenagers tips) or YouTube tutorials
+
+# Parental control bypass guides
+# (Better handled by monitoring than blocking)
+
+# VPN services marketed to minors for bypass
+# (See vpn-bypass.txt for comprehensive VPN list)
+
+# Proxy and anonymizer sites
+# (Can help bypass school/parental filters)
+hidester.com
+hide.me
+proxysite.com
+kproxy.com
+filterbypass.me
+unblockit.page
+unblockit.tv
+unblocked-games.io
+unblocked-games.net
+
+# "Unblocked games" sites (school filter bypass)
+# These are marketed to students to play games at school
+unblockedgames66.com
+unblockedgames77.com
+unblockedgames24h.com
+sites.google.com/site/unblockedgame
+
+# Browser-based bypass tools
+browserling.com
+browserstack.com/live
+# Note: These have legitimate uses but can bypass filters

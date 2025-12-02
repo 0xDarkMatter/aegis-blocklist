@@ -1,0 +1,68 @@
+# Predator Risk Apps and Sites
+# Grade: Core (Essential)
+# Last updated: 2025-11-30
+#
+# Apps and sites with documented predator/grooming issues
+# Sources: Bark, NCMEC, news reports on child safety
+
+# === Stranger Video Chat (Omegle Clones) ===
+omegle.com
+chatroulette.com
+emeraldchat.com
+shagle.com
+camsurf.com
+chatspin.com
+monkey.app
+monkey.cool
+azar.com
+holla.world
+chatrandom.com
+bazoocam.org
+tinychat.com
+ome.tv
+chathub.com
+chatroulette.eu
+chatki.com
+flingster.com
+dirtyroulette.com
+
+# === Teen Apps with Documented Issues ===
+# wizz.app REMOVED: Domain now hosts B2B sales software "WiZZ Sales", not the teen app
+wizzapp.com
+# Yubo known for predator access
+yubo.live
+yubo.app
+# Holla - no age verification
+holla.world
+hollaapp.com
+# Wink - teen dating concerns
+winkapp.me
+
+# === Anonymous Messaging ===
+yikyak.com
+whisper.sh
+sarahah.com
+tellonym.me
+ngl.link
+sendit.com
+tbh.co
+
+# === Unmoderated Chat ===
+kik.com
+kikme.com
+telegram.org
+telegram.me
+discord.com
+discordapp.com
+
+# === Age-Gap / Sugar Dating ===
+seekingarrangement.com
+seeking.com
+sugardaddy.com
+sugardaddymeet.com
+sugarbook.com
+whatyourprice.com
+sugardaters.com
+mysugardaddy.com
+establishedmen.com
+thesugarbook.com

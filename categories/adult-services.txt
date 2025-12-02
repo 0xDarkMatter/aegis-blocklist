@@ -1,0 +1,61 @@
+# Adult Services - Escort Directories, Sugar Dating, Classifieds
+# Grade: Standard
+# Last updated: 2025-12-01
+#
+# Escort directories, sugar dating sites, adult classifieds
+# Often missed by mainstream blocklists
+
+# === Escort Directories (Global) ===
+eros.com
+erosguide.com
+tryst.link
+slixa.com
+adultsearch.com
+escortbabylon.net
+listcrawler.com
+skipthegames.com
+bedpage.com
+megapersonals.com
+harlothub.com
+escortdude.com
+babesandescorts.com
+eurogirlsescort.com
+sexbroker.eu
+escort-ireland.com
+adultwork.com
+vivastreet.co.uk
+punternet.com
+
+# === Escort Directories (Australia) ===
+escortsofaustralia.com.au
+escortify.com.au
+privateescorts.com.au
+dakotadice.com.au
+roladex.com.au
+velvetklub.com
+skokka.com.au
+locanto.com.au
+cracker.com.au
+masseuse.com.au
+happyending.com.au
+scarletblue.com.au
+punterplanet.com
+langtrees.com.au
+
+# === Sugar Dating ===
+seeking.com
+whatsyourprice.com
+sugardaddy.com
+sugardaddymeet.com
+sugarbook.com
+luxurydate.com
+secretbenefits.com
+established.men
+
+# === Adult Classifieds ===
+doublelist.com
+swingtowns.com
+adultfriendfinder.com
+alt.com
+fetlife.com
+collarspace.com
