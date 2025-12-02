@@ -43,28 +43,32 @@ Before installing, you need your NextDNS config ID:
 2. Your **Configuration ID** is shown at the top - it looks like `abc123` (6-7 characters)
 3. Write this down - you'll need it in the next step
 
-### Step 3: Install NextDNS CLI (The Easy Way)
+### Step 3: Install NextDNS CLI
 
-**Option A: Windows Installer (Recommended)**
+> **Important:** There are two NextDNS apps for Windows:
+> - **GUI app** (from nextdns.io) - has a tray icon your child can right-click to disable
+> - **CLI** (from GitHub) - runs as an invisible Windows Service, no tray icon
+>
+> **For child safety, use the CLI.** It's invisible and requires admin rights to stop.
 
 1. Log into YOUR admin account (not your child's)
-2. Download the installer: [nextdns.io/download/windows/stable](https://nextdns.io/download/windows/stable)
-3. Run the installer
-4. When prompted, enter your **Configuration ID** from Step 2
-5. Click Install - it runs as a Windows Service automatically
-
-**Option B: Command Line**
-
-1. Log into YOUR admin account
-2. Download `nextdns_windows_amd64.zip` from [github.com/nextdns/nextdns/releases](https://github.com/nextdns/nextdns/releases)
-3. Extract to `C:\Program Files\NextDNS\`
-4. Open **Command Prompt as Administrator** (right-click → Run as administrator)
-5. Run these commands (replace `abc123` with YOUR config ID):
+2. Download the CLI from [github.com/nextdns/nextdns/releases](https://github.com/nextdns/nextdns/releases)
+   - Get `nextdns_X.XX.X_windows_amd64.zip` (the latest version)
+3. Extract the zip file
+4. Move `nextdns.exe` to `C:\Program Files\NextDNS\` (create this folder)
+5. Open **Command Prompt as Administrator**:
+   - Press `Windows` key, type `cmd`
+   - Right-click **Command Prompt** → **Run as administrator**
+6. Run these commands (replace `abc123` with YOUR config ID from Step 2):
 
 ```cmd
 cd "C:\Program Files\NextDNS"
 nextdns.exe install -config abc123 -report-client-info -auto-activate
 ```
+
+7. You should see "NextDNS installed and started"
+
+**That's it.** NextDNS now runs as a Windows Service with no tray icon. Your child won't see it running and cannot disable it without admin rights.
 
 ### Step 4: Verify It's Working
 
