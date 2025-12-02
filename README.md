@@ -31,10 +31,6 @@ Most parental controls only work if kids can't circumvent them. When a child ins
 2. Enable parental controls (Porn, Gambling, etc.)
 3. Add Aegis to your denylist: [my.nextdns.io](https://my.nextdns.io) → Denylist → Import
 
-**Also enable these blocklists** (they handle ads/tracking/malware):
-- [OISD](https://oisd.nl/) - Balanced, low false positives
-- [Hagezi](https://github.com/hagezi/dns-blocklists) - Comprehensive protection
-
 ### Pi-hole / AdGuard Home
 
 ```
