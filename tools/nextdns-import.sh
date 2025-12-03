@@ -53,13 +53,15 @@ while IFS= read -r domain; do
             -d "{\"id\":\"$domain\",\"active\":true}")
 
         HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+        BODY=$(echo "$RESPONSE" | sed '$d')
 
         if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "201" ]; then
-            ADDED=$((ADDED + 1))
-            SUCCESS=1
-            break
-        elif [ "$HTTP_CODE" = "409" ]; then
-            SKIPPED=$((SKIPPED + 1))
+            # Check if body contains duplicate error
+            if echo "$BODY" | grep -q '"code":"duplicate"'; then
+                SKIPPED=$((SKIPPED + 1))
+            else
+                ADDED=$((ADDED + 1))
+            fi
             SUCCESS=1
             break
         elif [ "$HTTP_CODE" = "429" ]; then

@@ -58,19 +58,19 @@ foreach ($domain in $domains) {
     # Try up to 3 times with backoff
     for ($attempt = 1; $attempt -le 3; $attempt++) {
         try {
-            $null = Invoke-RestMethod -Uri $ApiUrl -Method Post -Headers $headers -Body $body -ErrorAction Stop
-            $added++
+            $result = Invoke-RestMethod -Uri $ApiUrl -Method Post -Headers $headers -Body $body -ErrorAction Stop
+            # Check if response contains duplicate error
+            if ($result.errors -and ($result.errors | Where-Object { $_.code -eq "duplicate" })) {
+                $skipped++
+            } else {
+                $added++
+            }
             $success = $true
             break
         }
         catch {
             $statusCode = $_.Exception.Response.StatusCode.value__
-            if ($statusCode -eq 409) {
-                $skipped++
-                $success = $true
-                break
-            }
-            elseif ($statusCode -eq 429) {
+            if ($statusCode -eq 429) {
                 # Rate limited - wait longer
                 Start-Sleep -Milliseconds ($attempt * 2000)
             }
