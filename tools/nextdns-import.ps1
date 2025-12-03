@@ -1,27 +1,59 @@
 # Aegis -> NextDNS Importer
-# Usage: .\nextdns-import.ps1 -ApiKey YOUR_API_KEY -ConfigId YOUR_CONFIG_ID [-Grade standard]
+# Usage: .\nextdns-import.ps1 [-ApiKey KEY] [-ConfigId ID] [-Grade standard]
 #
+# If parameters not provided, script will prompt interactively.
 # Get your API key: https://my.nextdns.io/account
-# Get your Config ID: It's in your NextDNS URL (my.nextdns.io/abc123/setup)
+# Get your Config ID: my.nextdns.io -> select profile -> Setup tab -> ID field
 
 param(
-    [Parameter(Mandatory=$true)]
     [string]$ApiKey,
-
-    [Parameter(Mandatory=$true)]
     [string]$ConfigId,
-
     [ValidateSet("core", "standard", "strict", "maximum")]
-    [string]$Grade = "standard"
+    [string]$Grade
 )
+
+Write-Host ""
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host "  Aegis -> NextDNS Importer" -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host ""
+
+# Interactive prompts if not provided
+if (-not $ConfigId) {
+    Write-Host "Config ID: Found in NextDNS -> Select profile -> Setup tab" -ForegroundColor Gray
+    $ConfigId = Read-Host "Enter your NextDNS Config ID (e.g., abc123)"
+}
+
+if (-not $ApiKey) {
+    Write-Host ""
+    Write-Host "API Key: Found at my.nextdns.io/account -> API section" -ForegroundColor Gray
+    $ApiKey = Read-Host "Enter your NextDNS API Key"
+}
+
+if (-not $Grade) {
+    Write-Host ""
+    Write-Host "Blocking Grades:" -ForegroundColor Gray
+    Write-Host "  1) core     - Essential safety (self-harm, gore, predators)" -ForegroundColor Gray
+    Write-Host "  2) standard - Recommended (core + VPN bypass, gambling, AI adult)" -ForegroundColor Gray
+    Write-Host "  3) strict   - Enhanced (standard + weapons, crypto scams)" -ForegroundColor Gray
+    Write-Host "  4) maximum  - Everything" -ForegroundColor Gray
+    Write-Host ""
+    $choice = Read-Host "Select grade [1-4, default=2]"
+    $Grade = switch ($choice) {
+        "1" { "core" }
+        "3" { "strict" }
+        "4" { "maximum" }
+        default { "standard" }
+    }
+}
+
+Write-Host ""
 
 $ErrorActionPreference = "Stop"
 
 $BlocklistUrl = "https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/$Grade.txt"
 $ApiUrl = "https://api.nextdns.io/profiles/$ConfigId/denylist"
 
-Write-Host "Aegis -> NextDNS Importer" -ForegroundColor Cyan
-Write-Host "========================" -ForegroundColor Cyan
 Write-Host "Config: $ConfigId"
 Write-Host "Grade: $Grade"
 Write-Host ""

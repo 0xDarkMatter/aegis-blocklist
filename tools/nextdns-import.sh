@@ -1,21 +1,66 @@
 #!/bin/bash
 # Aegis → NextDNS Importer
-# Usage: ./nextdns-import.sh YOUR_API_KEY YOUR_CONFIG_ID [grade]
+# Usage: ./nextdns-import.sh [API_KEY] [CONFIG_ID] [grade]
 #
+# If parameters not provided, script will prompt interactively.
 # Get your API key: https://my.nextdns.io/account
-# Get your Config ID: It's in your NextDNS URL (my.nextdns.io/abc123/setup)
+# Get your Config ID: my.nextdns.io -> select profile -> Setup tab -> ID field
 
 set -e
 
-API_KEY="${1:?Usage: $0 API_KEY CONFIG_ID [grade]}"
-CONFIG_ID="${2:?Usage: $0 API_KEY CONFIG_ID [grade]}"
-GRADE="${3:-standard}"
+echo ""
+echo "========================================"
+echo "  Aegis → NextDNS Importer"
+echo "========================================"
+echo ""
+
+# Interactive prompts if not provided
+if [ -z "$1" ]; then
+    echo "Config ID: Found in NextDNS -> Select profile -> Setup tab"
+    read -p "Enter your NextDNS Config ID (e.g., abc123): " CONFIG_ID
+else
+    CONFIG_ID="$1"
+fi
+
+if [ -z "$2" ] && [ -z "$1" ]; then
+    echo ""
+    echo "API Key: Found at my.nextdns.io/account -> API section"
+    read -p "Enter your NextDNS API Key: " API_KEY
+elif [ -n "$1" ] && [ -z "$2" ]; then
+    # If only one arg, it might be config ID, prompt for API key
+    API_KEY=""
+    echo ""
+    echo "API Key: Found at my.nextdns.io/account -> API section"
+    read -p "Enter your NextDNS API Key: " API_KEY
+else
+    API_KEY="$1"
+    CONFIG_ID="$2"
+fi
+
+if [ -z "$3" ] && [ -z "$1" ]; then
+    echo ""
+    echo "Blocking Grades:"
+    echo "  1) core     - Essential safety (self-harm, gore, predators)"
+    echo "  2) standard - Recommended (core + VPN bypass, gambling, AI adult)"
+    echo "  3) strict   - Enhanced (standard + weapons, crypto scams)"
+    echo "  4) maximum  - Everything"
+    echo ""
+    read -p "Select grade [1-4, default=2]: " choice
+    case "$choice" in
+        1) GRADE="core" ;;
+        3) GRADE="strict" ;;
+        4) GRADE="maximum" ;;
+        *) GRADE="standard" ;;
+    esac
+else
+    GRADE="${3:-standard}"
+fi
+
+echo ""
 
 BLOCKLIST_URL="https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/${GRADE}.txt"
 API_URL="https://api.nextdns.io/profiles/${CONFIG_ID}/denylist"
 
-echo "Aegis → NextDNS Importer"
-echo "========================"
 echo "Config: ${CONFIG_ID}"
 echo "Grade: ${GRADE}"
 echo ""
