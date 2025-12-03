@@ -69,6 +69,15 @@
         .success { color: #16a34a; margin-top: 12px; }
         .help { font-size: 13px; color: #6b7280; margin-top: 4px; }
         a { color: #2563eb; }
+        .privacy {
+            background: #ecfdf5;
+            border: 1px solid #10b981;
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #065f46;
+            margin-bottom: 8px;
+        }
         .warning {
             background: #fef3c7;
             border: 1px solid #f59e0b;
@@ -83,6 +92,7 @@
 <body>
     <h1>Aegis → NextDNS</h1>
     <p class="subtitle">Import the Aegis blocklist to your NextDNS denylist</p>
+    <p class="privacy">🔒 <strong>Privacy:</strong> Your credentials are never stored. This tool runs entirely in your browser and sends requests directly to NextDNS. One-time import only.</p>
 
     <label>NextDNS API Key</label>
     <input type="password" id="apiKey" placeholder="xxxxxxxxxxxxxxxxxxxxxxxx">
