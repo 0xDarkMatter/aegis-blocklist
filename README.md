@@ -84,18 +84,13 @@ https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/sta
 
 ### NextDNS (Cloud - No Self-Hosting)
 
-NextDNS is excellent but doesn't support custom blocklist URLs. Use our interactive import scripts:
+NextDNS is excellent but doesn't support custom blocklist URLs. Use our import tool:
 
-**Windows (PowerShell):**
-```powershell
-iwr https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.ps1 -OutFile aegis.ps1
-.\aegis.ps1
-```
+**Windows:** [Download aegis-import.bat](https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/aegis-import.bat) → Double-click to run
 
-**macOS/Linux:**
+**macOS/Linux:** Download and run in Terminal:
 ```bash
-curl -sLO https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.sh
-bash nextdns-import.sh
+curl -sLO https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.sh && bash nextdns-import.sh
 ```
 
 The script will prompt you for:
