@@ -11,70 +11,72 @@
             max-width: 600px;
             margin: 40px auto;
             padding: 20px;
-            background: #0d1117;
-            color: #c9d1d9;
+            background: #f8f9fa;
+            color: #1a1a1a;
         }
-        h1 { color: #58a6ff; margin-bottom: 8px; }
-        .subtitle { color: #8b949e; margin-bottom: 24px; }
-        label { display: block; margin-top: 16px; color: #8b949e; font-size: 14px; }
+        h1 { color: #2563eb; margin-bottom: 8px; }
+        .subtitle { color: #6b7280; margin-bottom: 24px; }
+        label { display: block; margin-top: 16px; color: #374151; font-size: 14px; font-weight: 500; }
         input, select {
             width: 100%;
             padding: 12px;
             margin-top: 4px;
-            border: 1px solid #30363d;
+            border: 1px solid #d1d5db;
             border-radius: 6px;
-            background: #161b22;
-            color: #c9d1d9;
+            background: white;
+            color: #1a1a1a;
             font-size: 16px;
         }
-        input:focus, select:focus { border-color: #58a6ff; outline: none; }
+        input:focus, select:focus { border-color: #2563eb; outline: none; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
         button {
             width: 100%;
             padding: 14px;
             margin-top: 24px;
             border: none;
             border-radius: 6px;
-            background: #238636;
+            background: #2563eb;
             color: white;
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
         }
-        button:hover { background: #2ea043; }
-        button:disabled { background: #30363d; cursor: not-allowed; }
+        button:hover { background: #1d4ed8; }
+        button:disabled { background: #9ca3af; cursor: not-allowed; }
         .progress {
             margin-top: 24px;
             padding: 16px;
-            background: #161b22;
+            background: white;
+            border: 1px solid #e5e7eb;
             border-radius: 6px;
             display: none;
         }
         .progress-bar {
             height: 8px;
-            background: #30363d;
+            background: #e5e7eb;
             border-radius: 4px;
             overflow: hidden;
             margin: 12px 0;
         }
         .progress-fill {
             height: 100%;
-            background: #58a6ff;
+            background: #2563eb;
             width: 0%;
             transition: width 0.3s;
         }
-        .stats { font-size: 14px; color: #8b949e; }
-        .stats span { color: #c9d1d9; }
-        .error { color: #f85149; margin-top: 12px; }
-        .success { color: #3fb950; margin-top: 12px; }
-        .help { font-size: 13px; color: #8b949e; margin-top: 4px; }
-        a { color: #58a6ff; }
+        .stats { font-size: 14px; color: #6b7280; }
+        .stats span { color: #1a1a1a; font-weight: 500; }
+        .error { color: #dc2626; margin-top: 12px; }
+        .success { color: #16a34a; margin-top: 12px; }
+        .help { font-size: 13px; color: #6b7280; margin-top: 4px; }
+        a { color: #2563eb; }
         .warning {
-            background: #341a00;
-            border: 1px solid #9e6a03;
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
             padding: 12px;
             border-radius: 6px;
             margin-top: 24px;
             font-size: 14px;
+            color: #92400e;
         }
     </style>
 </head>
