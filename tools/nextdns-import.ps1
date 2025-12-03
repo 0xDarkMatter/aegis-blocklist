@@ -20,14 +20,18 @@ Write-Host ""
 
 # Interactive prompts if not provided
 if (-not $ConfigId) {
-    Write-Host "Config ID: Found in NextDNS -> Select profile -> Setup tab" -ForegroundColor Gray
-    $ConfigId = Read-Host "Enter your NextDNS Config ID (e.g., abc123)"
+    Write-Host "CONFIG ID" -ForegroundColor Yellow
+    Write-Host "  Location: NextDNS -> Select profile -> Setup tab -> ID" -ForegroundColor Gray
+    Write-Host "  Format: 6 characters (e.g., abc123)" -ForegroundColor Gray
+    $ConfigId = Read-Host "Enter Config ID"
 }
 
 if (-not $ApiKey) {
     Write-Host ""
-    Write-Host "API Key: Found at my.nextdns.io/account -> API section" -ForegroundColor Gray
-    $ApiKey = Read-Host "Enter your NextDNS API Key"
+    Write-Host "API KEY" -ForegroundColor Yellow
+    Write-Host "  Location: my.nextdns.io/account -> API section" -ForegroundColor Gray
+    Write-Host "  Format: 40 characters (long string)" -ForegroundColor Gray
+    $ApiKey = Read-Host "Enter API Key"
 }
 
 if (-not $Grade) {

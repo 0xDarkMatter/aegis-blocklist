@@ -16,22 +16,16 @@ echo ""
 
 # Interactive prompts if not provided
 if [ -z "$1" ]; then
-    echo "Config ID: Found in NextDNS -> Select profile -> Setup tab"
-    read -p "Enter your NextDNS Config ID (e.g., abc123): " CONFIG_ID
-else
-    CONFIG_ID="$1"
-fi
+    echo "CONFIG ID"
+    echo "  Location: NextDNS -> Select profile -> Setup tab -> ID"
+    echo "  Format: 6 characters (e.g., abc123)"
+    read -p "Enter Config ID: " CONFIG_ID
 
-if [ -z "$2" ] && [ -z "$1" ]; then
     echo ""
-    echo "API Key: Found at my.nextdns.io/account -> API section"
-    read -p "Enter your NextDNS API Key: " API_KEY
-elif [ -n "$1" ] && [ -z "$2" ]; then
-    # If only one arg, it might be config ID, prompt for API key
-    API_KEY=""
-    echo ""
-    echo "API Key: Found at my.nextdns.io/account -> API section"
-    read -p "Enter your NextDNS API Key: " API_KEY
+    echo "API KEY"
+    echo "  Location: my.nextdns.io/account -> API section"
+    echo "  Format: 40 characters (long string)"
+    read -p "Enter API Key: " API_KEY
 else
     API_KEY="$1"
     CONFIG_ID="$2"
