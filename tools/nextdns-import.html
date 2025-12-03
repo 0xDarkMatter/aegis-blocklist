@@ -86,11 +86,22 @@
 
     <label>NextDNS API Key</label>
     <input type="password" id="apiKey" placeholder="xxxxxxxxxxxxxxxxxxxxxxxx">
-    <p class="help">Get yours at <a href="https://my.nextdns.io/account" target="_blank">my.nextdns.io/account</a></p>
+    <p class="help">
+        <strong>How to get your API key:</strong><br>
+        1. Go to <a href="https://my.nextdns.io/account" target="_blank">my.nextdns.io/account</a><br>
+        2. Scroll down to "API"<br>
+        3. Click "Create new API key" or copy your existing key
+    </p>
 
-    <label>Config ID</label>
+    <label>Config ID (for your Kids profile)</label>
     <input type="text" id="configId" placeholder="abc123">
-    <p class="help">Found in your NextDNS URL: my.nextdns.io/<strong>abc123</strong>/setup</p>
+    <p class="help">
+        <strong>How to find your Config ID:</strong><br>
+        1. Go to <a href="https://my.nextdns.io" target="_blank">my.nextdns.io</a><br>
+        2. Select your <strong>Kids</strong> profile (not your Parents profile!)<br>
+        3. Look at the URL: my.nextdns.io/<strong>abc123</strong>/setup<br>
+        4. The 6-character code (e.g., <strong>abc123</strong>) is your Config ID
+    </p>
 
     <label>Blocklist Grade</label>
     <select id="grade">
@@ -101,8 +112,10 @@
     </select>
 
     <div class="warning">
-        <strong>⚠️ Creates a "Kids" profile?</strong><br>
-        Aegis blocks GitHub, Vercel, and developer platforms. Make sure you have a separate unfiltered profile for your own devices.
+        <strong>Important: Use TWO NextDNS profiles</strong><br><br>
+        <strong>Kids profile</strong> → Apply Aegis here (blocks GitHub, Vercel, coding sites)<br>
+        <strong>Parents profile</strong> → Keep unfiltered for your own devices<br><br>
+        If you only have one profile, <a href="https://my.nextdns.io" target="_blank">create a second one</a> before importing. Otherwise you'll block yourself from this tool and other sites you need!
     </div>
 
     <button id="importBtn" onclick="startImport()">Import to NextDNS</button>
