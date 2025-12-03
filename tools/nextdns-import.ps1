@@ -105,10 +105,13 @@ $errors = 0
 $count = 0
 $failedDomains = @()
 
-Write-Host "Importing $toAddCount new domains..."
 foreach ($domain in $toAdd) {
     if ([string]::IsNullOrWhiteSpace($domain)) { continue }
     $count++
+
+    # Progress bar
+    $pct = [math]::Round(($count / $toAddCount) * 100)
+    Write-Progress -Activity "Importing domains to NextDNS" -Status "$count of $toAddCount ($pct%)" -PercentComplete $pct
 
     $body = @{ id = $domain; active = $true } | ConvertTo-Json
     $success = $false
@@ -137,14 +140,11 @@ foreach ($domain in $toAdd) {
         $failedDomains += $domain
     }
 
-    # Progress every 25 domains
-    if ($count % 25 -eq 0) {
-        Write-Host "  $count/$toAddCount - Added: $added, Errors: $errors"
-    }
-
     # Rate limit protection (200ms between requests)
     Start-Sleep -Milliseconds 200
 }
+
+Write-Progress -Activity "Importing domains to NextDNS" -Completed
 
 Write-Host ""
 Write-Host "========================" -ForegroundColor Cyan

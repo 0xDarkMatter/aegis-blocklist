@@ -92,9 +92,14 @@ COUNT=0
 FAILED_DOMAINS=""
 
 echo "Importing ${TO_ADD_COUNT} new domains..."
+echo ""
 while IFS= read -r domain; do
     [ -z "$domain" ] && continue
     COUNT=$((COUNT + 1))
+
+    # Progress bar (updates in place)
+    PCT=$((COUNT * 100 / TO_ADD_COUNT))
+    printf "\r  Progress: %3d%% (%d/%d) - Added: %d, Errors: %d" "$PCT" "$COUNT" "$TO_ADD_COUNT" "$ADDED" "$ERRORS"
 
     # Try up to 3 times with backoff
     SUCCESS=0
@@ -122,14 +127,10 @@ while IFS= read -r domain; do
         FAILED_DOMAINS="${FAILED_DOMAINS}${domain}\n"
     fi
 
-    # Progress every 25 domains
-    if [ $((COUNT % 25)) -eq 0 ]; then
-        echo "  ${COUNT}/${TO_ADD_COUNT} - Added: ${ADDED}, Errors: ${ERRORS}"
-    fi
-
     # Rate limit protection (200ms between requests)
     sleep 0.2
 done <<< "$TO_ADD"
+echo ""
 
 ALREADY_EXISTED=$((BLOCKLIST_COUNT - TO_ADD_COUNT))
 
