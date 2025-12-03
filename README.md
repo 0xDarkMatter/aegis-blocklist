@@ -90,7 +90,7 @@ NextDNS is excellent but doesn't support custom blocklist URLs. Use our import t
 
 1. Get your API key from [my.nextdns.io/account](https://my.nextdns.io/account)
 2. Get your Config ID from the URL: `my.nextdns.io/`**`abc123`**`/setup`
-3. Open [**tools/nextdns-import.html**](tools/nextdns-import.html) in your browser
+3. Open the **[Aegis NextDNS Importer](https://htmlpreview.github.io/?https://github.com/0xDarkMatter/aegis-blocklist/blob/master/tools/nextdns-import.html)**
 4. Enter credentials, click Import
 
 **Option B: Shell Script**
