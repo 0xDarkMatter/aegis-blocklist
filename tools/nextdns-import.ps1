@@ -26,29 +26,51 @@ Write-Host "Config: $ConfigId"
 Write-Host "Grade: $Grade"
 Write-Host ""
 
-# Fetch blocklist
-Write-Host "Fetching blocklist..."
-$response = Invoke-WebRequest -Uri $BlocklistUrl -UseBasicParsing
-$domains = $response.Content -split "`n" | Where-Object {
-    $_ -and -not $_.StartsWith("#") -and $_.Contains(".")
-} | ForEach-Object { $_.Trim() }
-$total = $domains.Count
-Write-Host "Found $total domains"
-Write-Host ""
-
-$added = 0
-$skipped = 0
-$errors = 0
-$count = 0
-$failedDomains = @()
-
 $headers = @{
     "X-Api-Key" = $ApiKey
     "Content-Type" = "application/json"
 }
 
-Write-Host "Importing..."
-foreach ($domain in $domains) {
+# Fetch existing denylist from NextDNS
+Write-Host "Fetching existing denylist..."
+$existingResponse = Invoke-RestMethod -Uri $ApiUrl -Headers $headers -Method Get
+$existing = @{}
+foreach ($item in $existingResponse.data) {
+    $existing[$item.id] = $true
+}
+Write-Host "Found $($existing.Count) existing domains"
+
+# Fetch blocklist
+Write-Host "Fetching Aegis blocklist..."
+$response = Invoke-WebRequest -Uri $BlocklistUrl -UseBasicParsing
+$blocklist = $response.Content -split "`n" | Where-Object {
+    $_ -and -not $_.StartsWith("#") -and $_.Contains(".")
+} | ForEach-Object { $_.Trim() }
+Write-Host "Found $($blocklist.Count) domains in blocklist"
+
+# Find domains to add (in blocklist but not in existing)
+$toAdd = $blocklist | Where-Object { -not $existing.ContainsKey($_) }
+$toAddCount = @($toAdd).Count
+$alreadyExisted = $blocklist.Count - $toAddCount
+
+Write-Host ""
+Write-Host "Domains to add: $toAddCount"
+
+if ($toAddCount -eq 0) {
+    Write-Host ""
+    Write-Host "========================" -ForegroundColor Cyan
+    Write-Host "Already up to date! No new domains to add." -ForegroundColor Green
+    exit 0
+}
+
+Write-Host ""
+$added = 0
+$errors = 0
+$count = 0
+$failedDomains = @()
+
+Write-Host "Importing $toAddCount new domains..."
+foreach ($domain in $toAdd) {
     if ([string]::IsNullOrWhiteSpace($domain)) { continue }
     $count++
 
@@ -58,24 +80,17 @@ foreach ($domain in $domains) {
     # Try up to 3 times with backoff
     for ($attempt = 1; $attempt -le 3; $attempt++) {
         try {
-            $result = Invoke-RestMethod -Uri $ApiUrl -Method Post -Headers $headers -Body $body -ErrorAction Stop
-            # Check if response contains duplicate error
-            if ($result.errors -and ($result.errors | Where-Object { $_.code -eq "duplicate" })) {
-                $skipped++
-            } else {
-                $added++
-            }
+            $null = Invoke-RestMethod -Uri $ApiUrl -Method Post -Headers $headers -Body $body -ErrorAction Stop
+            $added++
             $success = $true
             break
         }
         catch {
             $statusCode = $_.Exception.Response.StatusCode.value__
             if ($statusCode -eq 429) {
-                # Rate limited - wait longer
                 Start-Sleep -Milliseconds ($attempt * 2000)
             }
             else {
-                # Other error - brief retry
                 Start-Sleep -Milliseconds 500
             }
         }
@@ -86,20 +101,20 @@ foreach ($domain in $domains) {
         $failedDomains += $domain
     }
 
-    # Progress every 50 domains
-    if ($count % 50 -eq 0) {
-        Write-Host "  $count/$total - Added: $added, Skipped: $skipped, Errors: $errors"
+    # Progress every 25 domains
+    if ($count % 25 -eq 0) {
+        Write-Host "  $count/$toAddCount - Added: $added, Errors: $errors"
     }
 
-    # Rate limit protection (250ms between requests)
-    Start-Sleep -Milliseconds 250
+    # Rate limit protection (200ms between requests)
+    Start-Sleep -Milliseconds 200
 }
 
 Write-Host ""
 Write-Host "========================" -ForegroundColor Cyan
 Write-Host "Complete!" -ForegroundColor Green
+Write-Host "  Already existed: $alreadyExisted"
 Write-Host "  Added: $added"
-Write-Host "  Skipped (duplicates): $skipped"
 Write-Host "  Errors: $errors"
 
 if ($errors -gt 0 -and $failedDomains.Count -gt 0) {

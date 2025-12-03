@@ -20,28 +20,41 @@ echo "Config: ${CONFIG_ID}"
 echo "Grade: ${GRADE}"
 echo ""
 
-# Fetch blocklist
-echo "Fetching blocklist..."
-DOMAINS=$(curl -sL "$BLOCKLIST_URL" | grep -v '^#' | grep -v '^$')
-TOTAL=$(echo "$DOMAINS" | wc -l | tr -d ' ')
-echo "Found ${TOTAL} domains"
-echo ""
+# Fetch existing denylist from NextDNS
+echo "Fetching existing denylist..."
+EXISTING=$(curl -sL "$API_URL" -H "X-Api-Key: $API_KEY" | grep -o '"id":"[^"]*"' | cut -d'"' -f4 | sort)
+EXISTING_COUNT=$(echo "$EXISTING" | grep -c . || echo 0)
+echo "Found ${EXISTING_COUNT} existing domains"
 
+# Fetch blocklist
+echo "Fetching Aegis blocklist..."
+BLOCKLIST=$(curl -sL "$BLOCKLIST_URL" | grep -v '^#' | grep -v '^$' | grep '\.' | sort)
+BLOCKLIST_COUNT=$(echo "$BLOCKLIST" | grep -c . || echo 0)
+echo "Found ${BLOCKLIST_COUNT} domains in blocklist"
+
+# Find domains to add (in blocklist but not in existing)
+TO_ADD=$(comm -23 <(echo "$BLOCKLIST") <(echo "$EXISTING"))
+TO_ADD_COUNT=$(echo "$TO_ADD" | grep -c . || echo 0)
+
+echo ""
+echo "Domains to add: ${TO_ADD_COUNT}"
+
+if [ "$TO_ADD_COUNT" -eq 0 ]; then
+    echo ""
+    echo "========================"
+    echo "Already up to date! No new domains to add."
+    exit 0
+fi
+
+echo ""
 ADDED=0
-SKIPPED=0
 ERRORS=0
 COUNT=0
 FAILED_DOMAINS=""
 
-echo "Importing..."
+echo "Importing ${TO_ADD_COUNT} new domains..."
 while IFS= read -r domain; do
     [ -z "$domain" ] && continue
-
-    # Skip entries without dots (bare TLDs like 'buzz')
-    if ! echo "$domain" | grep -q '\.'; then
-        continue
-    fi
-
     COUNT=$((COUNT + 1))
 
     # Try up to 3 times with backoff
@@ -53,22 +66,14 @@ while IFS= read -r domain; do
             -d "{\"id\":\"$domain\",\"active\":true}")
 
         HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
-        BODY=$(echo "$RESPONSE" | sed '$d')
 
         if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "201" ]; then
-            # Check if body contains duplicate error
-            if echo "$BODY" | grep -q '"code":"duplicate"'; then
-                SKIPPED=$((SKIPPED + 1))
-            else
-                ADDED=$((ADDED + 1))
-            fi
+            ADDED=$((ADDED + 1))
             SUCCESS=1
             break
         elif [ "$HTTP_CODE" = "429" ]; then
-            # Rate limited - wait longer and retry
             sleep $((attempt * 2))
         else
-            # Other error - retry once
             sleep 0.5
         fi
     done
@@ -78,20 +83,20 @@ while IFS= read -r domain; do
         FAILED_DOMAINS="${FAILED_DOMAINS}${domain}\n"
     fi
 
-    # Progress every 50 domains
-    if [ $((COUNT % 50)) -eq 0 ]; then
-        echo "  ${COUNT}/${TOTAL} - Added: ${ADDED}, Skipped: ${SKIPPED}, Errors: ${ERRORS}"
+    # Progress every 25 domains
+    if [ $((COUNT % 25)) -eq 0 ]; then
+        echo "  ${COUNT}/${TO_ADD_COUNT} - Added: ${ADDED}, Errors: ${ERRORS}"
     fi
 
-    # Rate limit protection (250ms between requests)
-    sleep 0.25
-done <<< "$DOMAINS"
+    # Rate limit protection (200ms between requests)
+    sleep 0.2
+done <<< "$TO_ADD"
 
 echo ""
 echo "========================"
 echo "Complete!"
+echo "  Already existed: $((BLOCKLIST_COUNT - TO_ADD_COUNT))"
 echo "  Added: ${ADDED}"
-echo "  Skipped (duplicates): ${SKIPPED}"
 echo "  Errors: ${ERRORS}"
 
 if [ "$ERRORS" -gt 0 ] && [ -n "$FAILED_DOMAINS" ]; then
