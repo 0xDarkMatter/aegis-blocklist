@@ -17,6 +17,31 @@ Installing a DNS filter isn't enough. Kids can uninstall apps, change settings, 
 
 ---
 
+## Critical: Separate Parent & Child Profiles
+
+Aegis blocks developer platforms (GitHub, Vercel, Replit) and code repositories because they're used to deploy browser-based proxy networks. This is intentional—these platforms provide more bypass risk than legitimate utility for children.
+
+**But this means: If you apply Aegis to YOUR devices, you'll block yourself from:**
+- This GitHub repository (to get updates)
+- Developer documentation and tools
+- Cloud platforms you may use for work
+
+**Recommended Setup:**
+
+| Profile | Applied To | Aegis? |
+|---------|------------|--------|
+| **"Kids"** | Children's devices | ✅ Yes |
+| **"Parents"** | Your devices | ❌ No (or minimal filtering) |
+
+In NextDNS:
+1. Create two separate configurations
+2. Apply Aegis blocklist only to the "Kids" profile
+3. Keep your devices on the unfiltered "Parents" profile
+
+**Alternative**: Access this repo from a mobile device on cellular data (not your filtered home WiFi).
+
+---
+
 ## Choose Your Platform
 
 | Platform | Guide | Best For |

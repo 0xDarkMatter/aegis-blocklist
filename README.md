@@ -21,7 +21,50 @@ Major blocklists cover a lot of ground including ads, tracking, malware, adult c
 
 ### The Bypass Problem
 
-Most parental controls only work if kids can't circumvent them. When a child installs a VPN app or uses a web proxy, **all protection is gone**. Aegis blocks 200+ VPN services, proxy sites, and DNS-over-HTTPS endpoints at the DNS level—before they can be used to bypass other filters.
+Most parental controls only work if kids can't circumvent them. When a child installs a VPN app or uses a web proxy, **all protection is gone**. Aegis blocks 300+ VPN services, proxy sites, and DNS-over-HTTPS endpoints at the DNS level—before they can be used to bypass other filters.
+
+### Why We Block Developer Platforms (GitHub, Vercel, etc.)
+
+**This may surprise you**: Aegis blocks GitHub, Vercel, Netlify, Replit, and similar developer platforms. Here's why.
+
+#### The 2025 Bypass Landscape
+
+Traditional VPN blocking is no longer enough. Modern bypass tools like **Interstellar**, **Doge Unblocker**, **Rammerhead**, and **Ultraviolet** are browser-in-browser proxy networks that:
+
+| Capability | What It Means |
+|------------|---------------|
+| **Run entirely in browser** | No app to install, no admin rights needed |
+| **Use Service Workers** | Intercept all web requests invisibly |
+| **Tab cloaking** | Browser tab shows "Google Docs" while browsing anything |
+| **about:blank hiding** | Content hidden in blank tabs, evades monitoring |
+| **One-click access** | Visit one URL → full unrestricted internet |
+
+A child visits a single URL and immediately bypasses ALL DNS filtering to access predator chats, gore, self-harm content—everything.
+
+#### How Developer Platforms Enable This
+
+| Platform | Abuse Pattern |
+|----------|---------------|
+| **GitHub** | Hosts Ultraviolet, Interstellar, Rammerhead source code. "Deploy to Vercel" button = 60-second proxy. |
+| **Vercel/Netlify** | Free subdomains = infinite proxy mirrors. Primary host for Doge Unblocker. |
+| **Replit** | Students deploy proxies during class. Live coding = live bypass. |
+| **Glitch** | Ephemeral instances make blocking impossible. |
+
+These platforms provide **near-zero legitimate utility for children** but **one-click access to the worst content on the internet**. Blocking the gateway blocks ALL downstream harm.
+
+> **Philosophy**: If a platform provides more bypass capability than legitimate utility for children, block the entire platform. Individual sites can be whitelisted if legitimately needed.
+
+#### The .buzz TLD
+
+We block the entire `.buzz` TLD. It's heavily abused for ephemeral proxy mirrors (e.g., `mathprofession.buzz`, `zearn.buzz`) traded on Discord. Legitimate `.buzz` sites are rare.
+
+#### Parents: Don't Block Yourself!
+
+**Create TWO NextDNS profiles:**
+- **"Kids"** – Apply Aegis blocklist (restrictive)
+- **"Parents"** – Unfiltered or minimal filtering
+
+If you apply Aegis to your own devices, you'll block yourself from this GitHub repository, developer documentation, and legitimate tools. Keep at least one device or profile unfiltered for administration.
 
 ## Quick Start
 
@@ -67,7 +110,7 @@ Get-Content "$env:TEMP\aegis.txt" | Add-Content "C:\Windows\System32\drivers\etc
 ### Standard (Recommended)
 | Category | Count | Description |
 |----------|-------|-------------|
-| VPN/Proxy Bypass | 217 | VPN services, web proxies, DNS changers |
+| VPN/Proxy Bypass | 315 | VPN services, web proxies, gateway platforms, browser-based proxies |
 | Gambling (AU) | 35 | Australian betting sites |
 | Gambling (Intl) | 46 | International gambling |
 | Gambling (Crypto) | 35 | Crypto casinos |

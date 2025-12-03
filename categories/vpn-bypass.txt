@@ -241,3 +241,75 @@ lifelock.com
 mcafee.com
 bitdefender.com
 malwarebytes.com
+
+# === Gateway Hosting Platforms ===
+# These platforms systematically host browser-based proxy networks
+# (Interstellar, Doge Unblocker, Rammerhead, Ultraviolet)
+# Block entire platform - whitelist specific legitimate sites if needed
+vercel.app
+netlify.app
+netlify.com
+onrender.com
+render.com
+glitch.me
+glitch.com
+repl.co
+replit.com
+codesandbox.io
+koyeb.com
+koyeb.app
+railway.app
+fly.io
+fly.dev
+cyclic.sh
+cyclic.app
+deta.sh
+deta.space
+surge.sh
+pages.dev
+workers.dev
+herokuapp.com
+azurewebsites.net
+github.io
+gitpod.io
+
+# === Code Repository & Supply Chain ===
+# Hosts proxy source code with one-click deploy buttons
+github.com
+gitlab.com
+bitbucket.org
+codeberg.org
+
+# === Browser-Based Proxy Networks ===
+# Official sites for evasion tools
+titaniumnetwork.org
+rammerhead.org
+holy-unblocker.com
+holyubofficial.net
+useinterstellar.com
+interstellar.sh
+
+# === Proxy Aggregators & Link Hubs ===
+# Maintain lists of working proxy mirrors
+ubghub.org
+byepasshub.github.io
+simplesites.org
+unblockedgames.dev
+unblockedgames.io
+unblockedgames.net
+unblockedgames66.com
+unblockedgames76.com
+unblockedgames77.com
+
+# === .buzz TLD (High Proxy Abuse) ===
+# This TLD is heavily abused for ephemeral proxy mirrors
+buzz
+
+# === Known Proxy Mirrors ===
+mathprofession.buzz
+zearn.buzz
+ilikelittlekids.buzz
+verla.buzz
+narp.fr.to
+bokkki.oops.wtf
+waermoster.sistemasplenario.ar
