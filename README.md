@@ -84,25 +84,26 @@ https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/sta
 
 ### NextDNS (Cloud - No Self-Hosting)
 
-NextDNS is excellent but doesn't support custom blocklist URLs. Use our import scripts:
+NextDNS is excellent but doesn't support custom blocklist URLs. Use our interactive import scripts:
 
-**Step 1: Get your credentials**
-- **API Key**: [my.nextdns.io/account](https://my.nextdns.io/account) → scroll to "API" → create/copy key
-- **Config ID**: Select your **Kids** profile → Setup tab → find "ID" under Endpoints
-
-**Step 2: Run the import**
-
+**Windows (PowerShell):**
 ```powershell
-# Windows PowerShell (run as Administrator)
-irm https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.ps1 -OutFile aegis.ps1; .\aegis.ps1 -ApiKey YOUR_API_KEY -ConfigId YOUR_CONFIG_ID
+iwr https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.ps1 -OutFile aegis.ps1
+.\aegis.ps1
 ```
 
+**macOS/Linux:**
 ```bash
-# macOS/Linux
-curl -sL https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.sh | bash -s YOUR_API_KEY YOUR_CONFIG_ID
+curl -sLO https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.sh
+bash nextdns-import.sh
 ```
 
-**Step 3: Also enable built-in controls** at [my.nextdns.io](https://my.nextdns.io):
+The script will prompt you for:
+- **Config ID**: NextDNS → Select your Kids profile → Setup tab → ID field
+- **API Key**: [my.nextdns.io/account](https://my.nextdns.io/account) → API section
+- **Blocking level**: Choose from core, standard, strict, or maximum
+
+**Also enable built-in controls** at [my.nextdns.io](https://my.nextdns.io):
 - Security → Threat Intelligence Feeds
 - Parental Control → Porn, Gambling, Piracy, Dating
 
