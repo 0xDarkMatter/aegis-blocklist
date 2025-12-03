@@ -86,7 +86,7 @@ https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/sta
 
 NextDNS is excellent but doesn't support custom blocklist URLs. Use our import tool:
 
-**Windows:** [Download aegis-import.bat](https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/aegis-import.bat) → Double-click to run
+**Windows:** [Download aegis-import.bat](https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/aegis-import.bat) → Right-click, "Save link as", save as `aegis-import.bat` (not .txt) → Double-click to run
 
 **macOS/Linux:** Download and run in Terminal:
 ```bash
