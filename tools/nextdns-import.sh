@@ -31,25 +31,49 @@ ADDED=0
 SKIPPED=0
 ERRORS=0
 COUNT=0
+FAILED_DOMAINS=""
 
 echo "Importing..."
 while IFS= read -r domain; do
     [ -z "$domain" ] && continue
+
+    # Skip entries without dots (bare TLDs like 'buzz')
+    if ! echo "$domain" | grep -q '\.'; then
+        continue
+    fi
+
     COUNT=$((COUNT + 1))
 
-    RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "$API_URL" \
-        -H "X-Api-Key: $API_KEY" \
-        -H "Content-Type: application/json" \
-        -d "{\"id\":\"$domain\",\"active\":true}")
+    # Try up to 3 times with backoff
+    SUCCESS=0
+    for attempt in 1 2 3; do
+        RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "$API_URL" \
+            -H "X-Api-Key: $API_KEY" \
+            -H "Content-Type: application/json" \
+            -d "{\"id\":\"$domain\",\"active\":true}")
 
-    HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+        HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
 
-    if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "201" ]; then
-        ADDED=$((ADDED + 1))
-    elif [ "$HTTP_CODE" = "409" ]; then
-        SKIPPED=$((SKIPPED + 1))
-    else
+        if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "201" ]; then
+            ADDED=$((ADDED + 1))
+            SUCCESS=1
+            break
+        elif [ "$HTTP_CODE" = "409" ]; then
+            SKIPPED=$((SKIPPED + 1))
+            SUCCESS=1
+            break
+        elif [ "$HTTP_CODE" = "429" ]; then
+            # Rate limited - wait longer and retry
+            sleep $((attempt * 2))
+        else
+            # Other error - retry once
+            sleep 0.5
+        fi
+    done
+
+    if [ "$SUCCESS" = "0" ]; then
         ERRORS=$((ERRORS + 1))
+        FAILED_DOMAINS="${FAILED_DOMAINS}${domain}\n"
     fi
 
     # Progress every 50 domains
@@ -57,8 +81,8 @@ while IFS= read -r domain; do
         echo "  ${COUNT}/${TOTAL} - Added: ${ADDED}, Skipped: ${SKIPPED}, Errors: ${ERRORS}"
     fi
 
-    # Rate limit protection
-    sleep 0.15
+    # Rate limit protection (250ms between requests)
+    sleep 0.25
 done <<< "$DOMAINS"
 
 echo ""
@@ -67,3 +91,9 @@ echo "Complete!"
 echo "  Added: ${ADDED}"
 echo "  Skipped (duplicates): ${SKIPPED}"
 echo "  Errors: ${ERRORS}"
+
+if [ "$ERRORS" -gt 0 ] && [ -n "$FAILED_DOMAINS" ]; then
+    echo ""
+    echo "Failed domains (first 10):"
+    echo -e "$FAILED_DOMAINS" | head -10
+fi

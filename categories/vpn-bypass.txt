@@ -301,9 +301,9 @@ unblockedgames66.com
 unblockedgames76.com
 unblockedgames77.com
 
-# === .buzz TLD (High Proxy Abuse) ===
-# This TLD is heavily abused for ephemeral proxy mirrors
-buzz
+# === .buzz TLD Mirrors ===
+# The .buzz TLD is heavily abused for ephemeral proxy mirrors
+# (NextDNS can't block entire TLDs - add specific domains as discovered)
 
 # === Known Proxy Mirrors ===
 mathprofession.buzz
