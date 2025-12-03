@@ -87,12 +87,42 @@
             font-size: 14px;
             color: #92400e;
         }
+        .cors-warning {
+            background: #fef2f2;
+            border: 1px solid #ef4444;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: #991b1b;
+        }
+        .cancel-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background: white;
+            color: #374151;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .cancel-btn:hover { background: #f3f4f6; }
     </style>
 </head>
 <body>
     <h1>Aegis → NextDNS</h1>
     <p class="subtitle">Import the Aegis blocklist to your NextDNS denylist</p>
     <p class="privacy">🔒 <strong>Privacy:</strong> Your credentials are never stored. This tool runs entirely in your browser and sends requests directly to NextDNS. One-time import only.</p>
+
+    <div class="cors-warning" id="corsWarning" style="display:none;">
+        <strong>⚠️ Browser security is blocking the requests.</strong><br><br>
+        <strong>Solution:</strong> Download this page and open it from your computer:<br>
+        1. Right-click this page → "Save as..." → save to Downloads<br>
+        2. Open the saved HTML file in your browser<br>
+        3. Try the import again<br><br>
+        Or use the <a href="https://github.com/0xDarkMatter/aegis-blocklist/blob/master/tools/nextdns-import.sh">shell script</a> instead.
+    </div>
 
     <label>NextDNS API Key</label>
     <input type="password" id="apiKey" placeholder="xxxxxxxxxxxxxxxxxxxxxxxx">
@@ -129,6 +159,7 @@
     </div>
 
     <button id="importBtn" onclick="startImport()">Import to NextDNS</button>
+    <button class="cancel-btn" id="cancelBtn" onclick="cancelImport()" style="display:none;">Cancel Import</button>
 
     <div class="progress" id="progress">
         <div class="stats">
@@ -154,6 +185,15 @@
 
         let stats = { added: 0, skipped: 0, errors: 0 };
         let aborted = false;
+        let corsError = false;
+
+        function cancelImport() {
+            aborted = true;
+            document.getElementById('cancelBtn').style.display = 'none';
+            document.getElementById('importBtn').disabled = false;
+            document.getElementById('importBtn').textContent = 'Import to NextDNS';
+            document.getElementById('status').innerHTML = '<span style="color:#6b7280">Import cancelled.</span>';
+        }
 
         async function fetchBlocklist(grade) {
             const url = `${BLOCKLIST_BASE}${grade}.txt`;
@@ -165,21 +205,29 @@
         }
 
         async function addDomain(apiKey, configId, domain) {
-            const response = await fetch(`${NEXTDNS_API}/${configId}/denylist`, {
-                method: 'POST',
-                headers: {
-                    'X-Api-Key': apiKey,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ id: domain, active: true })
-            });
+            try {
+                const response = await fetch(`${NEXTDNS_API}/${configId}/denylist`, {
+                    method: 'POST',
+                    headers: {
+                        'X-Api-Key': apiKey,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ id: domain, active: true })
+                });
 
-            if (response.status === 409) {
-                return 'duplicate';
-            } else if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
+                if (response.status === 409) {
+                    return 'duplicate';
+                } else if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                return 'added';
+            } catch (e) {
+                // CORS errors appear as TypeError: Failed to fetch
+                if (e.name === 'TypeError' && e.message.includes('fetch')) {
+                    corsError = true;
+                }
+                throw e;
             }
-            return 'added';
         }
 
         function updateUI(current, total) {
@@ -207,9 +255,12 @@
 
             btn.disabled = true;
             btn.textContent = 'Importing...';
+            document.getElementById('cancelBtn').style.display = 'block';
             progress.style.display = 'block';
             stats = { added: 0, skipped: 0, errors: 0 };
             aborted = false;
+            corsError = false;
+            document.getElementById('corsWarning').style.display = 'none';
 
             try {
                 status.innerHTML = '<span style="color:#8b949e">Fetching blocklist...</span>';
@@ -231,17 +282,32 @@
                     } catch (e) {
                         stats.errors++;
                         console.error(`Failed: ${domain}`, e);
+
+                        // If we get 5+ errors and they're all CORS, stop early
+                        if (corsError && stats.errors >= 5 && stats.added === 0) {
+                            document.getElementById('corsWarning').style.display = 'block';
+                            aborted = true;
+                        }
                     }
 
                     updateUI(i + 1, domains.length);
 
                     // Small delay to avoid rate limiting
-                    if (i < domains.length - 1) {
+                    if (i < domains.length - 1 && !aborted) {
                         await new Promise(r => setTimeout(r, DELAY_MS));
                     }
                 }
 
-                status.innerHTML = `<span class="success">✓ Complete! Added ${stats.added} domains to your denylist.</span>`;
+                document.getElementById('cancelBtn').style.display = 'none';
+
+                if (corsError && stats.added === 0) {
+                    document.getElementById('corsWarning').style.display = 'block';
+                    status.innerHTML = '<span class="error">Import failed due to browser security restrictions.</span>';
+                } else if (aborted) {
+                    status.innerHTML = '<span style="color:#6b7280">Import cancelled.</span>';
+                } else {
+                    status.innerHTML = `<span class="success">✓ Complete! Added ${stats.added} domains to your denylist.</span>`;
+                }
 
             } catch (e) {
                 status.innerHTML = `<span class="error">Error: ${e.message}</span>`;
@@ -249,6 +315,7 @@
 
             btn.disabled = false;
             btn.textContent = 'Import to NextDNS';
+            document.getElementById('cancelBtn').style.display = 'none';
         }
     </script>
 </body>
