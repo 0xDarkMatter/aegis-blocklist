@@ -7,7 +7,7 @@
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
 # Entries:     19                                                      #
-# Generated:   2025-12-03 21:34:15 UTC                                 #
+# Generated:   2025-12-04 00:02:33 UTC                                 #
 # Grade:       Standard                                                #
 #                                                                      #
 # Domains in the Manosphere and Red Pill category                      #

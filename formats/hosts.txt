@@ -6,12 +6,12 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     613                                                     #
-# Generated:   2025-12-03 21:34:15 UTC                                 #
+# Entries:     628                                                     #
+# Generated:   2025-12-04 00:02:33 UTC                                 #
 # Grade:       Standard                                                #
 #                                                                      #
 # System hosts file format (0.0.0.0). Includes www. variants for       #
-# 1226 total lines.                                                    #
+# 1256 total lines.                                                    #
 #                                                                      #
 #======================================================================#
 
@@ -214,6 +214,8 @@
 0.0.0.0 www.chatrandom.com
 0.0.0.0 chatroulette.com
 0.0.0.0 www.chatroulette.com
+0.0.0.0 chatroulette.eu
+0.0.0.0 www.chatroulette.eu
 0.0.0.0 chatspin.com
 0.0.0.0 www.chatspin.com
 0.0.0.0 chipstars.bet
@@ -224,6 +226,8 @@
 0.0.0.0 www.chub.ai
 0.0.0.0 clash.gg
 0.0.0.0 www.clash.gg
+0.0.0.0 cloak.com
+0.0.0.0 www.cloak.com
 0.0.0.0 cloth-off.ai
 0.0.0.0 www.cloth-off.ai
 0.0.0.0 cloth-off.io
@@ -342,6 +346,8 @@
 0.0.0.0 www.duckdns.org
 0.0.0.0 duelbits.com
 0.0.0.0 www.duelbits.com
+0.0.0.0 edsupportforum.com
+0.0.0.0 www.edsupportforum.com
 0.0.0.0 efukt.com
 0.0.0.0 www.efukt.com
 0.0.0.0 elitebet.com.au
@@ -384,6 +390,8 @@
 0.0.0.0 www.eztv.re
 0.0.0.0 f-secure.com
 0.0.0.0 www.f-secure.com
+0.0.0.0 facemagic.net
+0.0.0.0 www.facemagic.net
 0.0.0.0 fanduel.com
 0.0.0.0 www.fanduel.com
 0.0.0.0 fansly.com
@@ -470,6 +478,8 @@
 0.0.0.0 www.happyhippo.com
 0.0.0.0 harlothub.com
 0.0.0.0 www.harlothub.com
+0.0.0.0 hdmovie2.com
+0.0.0.0 www.hdmovie2.com
 0.0.0.0 headscale.net
 0.0.0.0 www.headscale.net
 0.0.0.0 heartiste.org
@@ -482,6 +492,8 @@
 0.0.0.0 www.hidemyass.net
 0.0.0.0 hidester.com
 0.0.0.0 www.hidester.com
+0.0.0.0 highstermobile.com
+0.0.0.0 www.highstermobile.com
 0.0.0.0 holla.world
 0.0.0.0 www.holla.world
 0.0.0.0 hoodsite.com
@@ -594,6 +606,8 @@
 0.0.0.0 www.lottoland.com.au
 0.0.0.0 luckyblock.com
 0.0.0.0 www.luckyblock.com
+0.0.0.0 luckydays.com
+0.0.0.0 www.luckydays.com
 0.0.0.0 madbookie.com.au
 0.0.0.0 www.madbookie.com.au
 0.0.0.0 malwarebytes.com
@@ -602,6 +616,8 @@
 0.0.0.0 www.mangadex.org
 0.0.0.0 manyvids.com
 0.0.0.0 www.manyvids.com
+0.0.0.0 masseuse.com.au
+0.0.0.0 www.masseuse.com.au
 0.0.0.0 matevpn.com
 0.0.0.0 www.matevpn.com
 0.0.0.0 mathprofession.buzz
@@ -784,6 +800,8 @@
 0.0.0.0 www.pointsbet.com.au
 0.0.0.0 pokerstars.com
 0.0.0.0 www.pokerstars.com
+0.0.0.0 pokerstars.net
+0.0.0.0 www.pokerstars.net
 0.0.0.0 pornhub.com
 0.0.0.0 www.pornhub.com
 0.0.0.0 pornify.cc
@@ -842,6 +860,8 @@
 0.0.0.0 www.redpillmen.com
 0.0.0.0 redpilltheory.com
 0.0.0.0 www.redpilltheory.com
+0.0.0.0 reface.ai
+0.0.0.0 www.reface.ai
 0.0.0.0 replika.ai
 0.0.0.0 www.replika.ai
 0.0.0.0 replika.com
@@ -898,6 +918,8 @@
 0.0.0.0 www.sexyforums.com
 0.0.0.0 shagle.com
 0.0.0.0 www.shagle.com
+0.0.0.0 skidbin.net
+0.0.0.0 www.skidbin.net
 0.0.0.0 skidrowreloaded.com
 0.0.0.0 www.skidrowreloaded.com
 0.0.0.0 skokka.com.au
@@ -1008,6 +1030,8 @@
 0.0.0.0 www.telegram.org
 0.0.0.0 tellonym.me
 0.0.0.0 www.tellonym.me
+0.0.0.0 testbanksolutions.org
+0.0.0.0 www.testbanksolutions.org
 0.0.0.0 the-spearhead.com
 0.0.0.0 www.the-spearhead.com
 0.0.0.0 theattractionforums.com
@@ -1172,10 +1196,14 @@
 0.0.0.0 www.vpnunlimited.com
 0.0.0.0 vpnunlimitedapp.com
 0.0.0.0 www.vpnunlimitedapp.com
+0.0.0.0 vpnwatch.com
+0.0.0.0 www.vpnwatch.com
 0.0.0.0 vyprvpn.com
 0.0.0.0 www.vyprvpn.com
 0.0.0.0 watchpeopledie.co
 0.0.0.0 www.watchpeopledie.co
+0.0.0.0 webproxy.to
+0.0.0.0 www.webproxy.to
 0.0.0.0 webwatcher.com
 0.0.0.0 www.webwatcher.com
 0.0.0.0 whatyourprice.com
@@ -1238,6 +1266,8 @@
 0.0.0.0 www.zerohedge.com
 0.0.0.0 zerotier.com
 0.0.0.0 www.zerotier.com
+0.0.0.0 zlvpn.com
+0.0.0.0 www.zlvpn.com
 0.0.0.0 zoogvpn.com
 0.0.0.0 www.zoogvpn.com
 0.0.0.0 zooqle.com

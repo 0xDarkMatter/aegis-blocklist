@@ -1,8 +1,8 @@
 [Adblock Plus]
 ! Title: Aegis Blocklist (Standard)
 ! Homepage: https://github.com/0xDarkMatter/Vordr
-! Entries: 613
-! Generated: 2025-12-03 21:34:15 UTC
+! Entries: 628
+! Generated: 2025-12-04 00:02:33 UTC
 ! Grade: Standard
 ! Description: Child Safety DNS Blocklist - AdBlock filter format
 
@@ -106,11 +106,13 @@
 ||chatki.com^
 ||chatrandom.com^
 ||chatroulette.com^
+||chatroulette.eu^
 ||chatspin.com^
 ||chipstars.bet^
 ||chitchat.gg^
 ||chub.ai^
 ||clash.gg^
+||cloak.com^
 ||cloth-off.ai^
 ||cloth-off.io^
 ||clothes-remover.com^
@@ -170,6 +172,7 @@
 ||drugs-forum.com^
 ||duckdns.org^
 ||duelbits.com^
+||edsupportforum.com^
 ||efukt.com^
 ||elitebet.com.au^
 ||emeraldchat.com^
@@ -191,6 +194,7 @@
 ||expressvpn.com^
 ||eztv.re^
 ||f-secure.com^
+||facemagic.net^
 ||fanduel.com^
 ||fansly.com^
 ||fantasy.ai^
@@ -234,12 +238,14 @@
 ||gurugossiper.com^
 ||happyhippo.com^
 ||harlothub.com^
+||hdmovie2.com^
 ||headscale.net^
 ||heartiste.org^
 ||hide.me^
 ||hidemy.name^
 ||hidemyass.net^
 ||hidester.com^
+||highstermobile.com^
 ||holla.world^
 ||hoodsite.com^
 ||hoverwatch.com^
@@ -296,10 +302,12 @@
 ||lostallhope.com^
 ||lottoland.com.au^
 ||luckyblock.com^
+||luckydays.com^
 ||madbookie.com.au^
 ||malwarebytes.com^
 ||mangadex.org^
 ||manyvids.com^
+||masseuse.com.au^
 ||matevpn.com^
 ||mathprofession.buzz^
 ||mbitcasino.com^
@@ -391,6 +399,7 @@
 ||pointsbet.com^
 ||pointsbet.com.au^
 ||pokerstars.com^
+||pokerstars.net^
 ||pornhub.com^
 ||pornify.cc^
 ||prettythin.com^
@@ -420,6 +429,7 @@
 ||realsocialdynamics.com^
 ||redpillmen.com^
 ||redpilltheory.com^
+||reface.ai^
 ||replika.ai^
 ||replika.com^
 ||robwaterhouse.com^
@@ -448,6 +458,7 @@
 ||sextingai.com^
 ||sexyforums.com^
 ||shagle.com^
+||skidbin.net^
 ||skidrowreloaded.com^
 ||skokka.com.au^
 ||skybet.com^
@@ -503,6 +514,7 @@
 ||telegram.me^
 ||telegram.org^
 ||tellonym.me^
+||testbanksolutions.org^
 ||the-spearhead.com^
 ||theattractionforums.com^
 ||theblackpill.com^
@@ -585,8 +597,10 @@
 ||vpntunnel.com^
 ||vpnunlimited.com^
 ||vpnunlimitedapp.com^
+||vpnwatch.com^
 ||vyprvpn.com^
 ||watchpeopledie.co^
+||webproxy.to^
 ||webwatcher.com^
 ||whatyourprice.com^
 ||whoer.net^
@@ -618,5 +632,6 @@
 ||zenvpn.net^
 ||zerohedge.com^
 ||zerotier.com^
+||zlvpn.com^
 ||zoogvpn.com^
 ||zooqle.com^

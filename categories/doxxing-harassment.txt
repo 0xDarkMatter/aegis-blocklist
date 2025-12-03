@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     10                                                      #
-# Generated:   2025-12-03 21:34:15 UTC                                 #
+# Entries:     11                                                      #
+# Generated:   2025-12-04 00:02:33 UTC                                 #
 # Grade:       Core                                                    #
 #                                                                      #
 # Domains in the Doxxing and Harassment category                       #
@@ -24,3 +24,4 @@ lolcow.farm
 lolcow.wiki
 onionfarms.com
 prettyuglylittleliar.net
+skidbin.net

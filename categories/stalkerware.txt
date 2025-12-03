@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     40                                                      #
-# Generated:   2025-12-03 21:34:15 UTC                                 #
+# Entries:     41                                                      #
+# Generated:   2025-12-04 00:02:33 UTC                                 #
 # Grade:       Standard                                                #
 #                                                                      #
 # Domains in the Stalkerware and Spyware category                      #
@@ -24,6 +24,7 @@ flexispy.com
 flexispy.net
 fonemonitor.co
 freephonespy.net
+highstermobile.com
 hoverwatch.com
 kidguard.com
 logger.mobi

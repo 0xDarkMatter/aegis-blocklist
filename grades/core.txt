@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     125                                                     #
-# Generated:   2025-12-03 21:34:15 UTC                                 #
+# Entries:     128                                                     #
+# Generated:   2025-12-04 00:02:33 UTC                                 #
 # Grade:       Core                                                    #
 # Categories:  core                                                    #
 #                                                                      #
@@ -35,6 +35,7 @@ chathub.com
 chatki.com
 chatrandom.com
 chatroulette.com
+chatroulette.eu
 chatspin.com
 chitchat.gg
 combat18.org
@@ -51,6 +52,7 @@ discord.com
 discordapp.com
 doxbin.com
 doxbin.org
+edsupportforum.com
 efukt.com
 emeraldchat.com
 endchan.net
@@ -111,6 +113,7 @@ self-injury.net
 selfharm.net
 selfinjury.com
 shagle.com
+skidbin.net
 stileproject.com
 stormfront.org
 sugarbook.com

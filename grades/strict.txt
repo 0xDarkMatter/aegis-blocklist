@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     628                                                     #
-# Generated:   2025-12-03 21:34:15 UTC                                 #
+# Entries:     644                                                     #
+# Generated:   2025-12-04 00:02:33 UTC                                 #
 # Grade:       Strict                                                  #
 # Categories:  core, standard, strict                                  #
 #                                                                      #
@@ -23,6 +23,7 @@
 1337x.st
 1337x.to
 1clickvpn.com
+24livetrade.com
 32red.com
 4everproxy.com
 4realtorrentz.com
@@ -119,11 +120,13 @@ chathub.com
 chatki.com
 chatrandom.com
 chatroulette.com
+chatroulette.eu
 chatspin.com
 chipstars.bet
 chitchat.gg
 chub.ai
 clash.gg
+cloak.com
 cloth-off.ai
 cloth-off.io
 clothes-remover.com
@@ -184,6 +187,7 @@ dreamgf.ai
 drugs-forum.com
 duckdns.org
 duelbits.com
+edsupportforum.com
 efukt.com
 elitebet.com.au
 emeraldchat.com
@@ -205,6 +209,7 @@ exitinternational.net
 expressvpn.com
 eztv.re
 f-secure.com
+facemagic.net
 fanduel.com
 fansly.com
 fantasy.ai
@@ -249,12 +254,14 @@ guardianproject.info
 gurugossiper.com
 happyhippo.com
 harlothub.com
+hdmovie2.com
 headscale.net
 heartiste.org
 hide.me
 hidemy.name
 hidemyass.net
 hidester.com
+highstermobile.com
 holla.world
 hoodsite.com
 hoverwatch.com
@@ -311,10 +318,12 @@ looksmax.org
 lostallhope.com
 lottoland.com.au
 luckyblock.com
+luckydays.com
 madbookie.com.au
 malwarebytes.com
 mangadex.org
 manyvids.com
+masseuse.com.au
 matevpn.com
 mathprofession.buzz
 mbitcasino.com
@@ -406,6 +415,7 @@ playup.com.au
 pointsbet.com
 pointsbet.com.au
 pokerstars.com
+pokerstars.net
 polymer80.com
 pornhub.com
 pornify.cc
@@ -437,6 +447,7 @@ rarbg.to
 realsocialdynamics.com
 redpillmen.com
 redpilltheory.com
+reface.ai
 replika.ai
 replika.com
 robwaterhouse.com
@@ -465,6 +476,7 @@ sentinel.co
 sextingai.com
 sexyforums.com
 shagle.com
+skidbin.net
 skidrowreloaded.com
 skokka.com.au
 skybet.com
@@ -520,6 +532,7 @@ tavern.ai
 telegram.me
 telegram.org
 tellonym.me
+testbanksolutions.org
 the-spearhead.com
 theattractionforums.com
 theblackpill.com
@@ -609,8 +622,10 @@ vpntracker.com
 vpntunnel.com
 vpnunlimited.com
 vpnunlimitedapp.com
+vpnwatch.com
 vyprvpn.com
 watchpeopledie.co
+webproxy.to
 webwatcher.com
 whatyourprice.com
 whoer.net
@@ -642,5 +657,6 @@ zenmate.com
 zenvpn.net
 zerohedge.com
 zerotier.com
+zlvpn.com
 zoogvpn.com
 zooqle.com

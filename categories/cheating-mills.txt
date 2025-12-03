@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     19                                                      #
-# Generated:   2025-12-03 21:34:15 UTC                                 #
+# Entries:     20                                                      #
+# Generated:   2025-12-04 00:02:33 UTC                                 #
 # Grade:       Standard                                                #
 #                                                                      #
 # Domains in the Essay Mills and Cheating category                     #
@@ -31,5 +31,6 @@ slader.com
 solutionmanual.net
 studocu.com
 studypool.com
+testbanksolutions.org
 ukessays.com
 writingpapersucks.com

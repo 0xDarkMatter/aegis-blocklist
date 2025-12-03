@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     19                                                      #
-# Generated:   2025-12-03 21:34:15 UTC                                 #
+# Entries:     20                                                      #
+# Generated:   2025-12-04 00:02:33 UTC                                 #
 # Grade:       Core                                                    #
 #                                                                      #
 # Domains in the Self-Harm and Pro-Ana category                        #
@@ -16,6 +16,7 @@
 
 ana-chan.com
 cutting.net
+edsupportforum.com
 exitinternational.net
 lostallhope.com
 peacefulpill.com
