@@ -113,15 +113,18 @@
 <body>
     <h1>Aegis → NextDNS</h1>
     <p class="subtitle">Import the Aegis blocklist to your NextDNS denylist</p>
-    <p class="privacy">🔒 <strong>Privacy:</strong> Your credentials are never stored. This tool runs entirely in your browser and sends requests directly to NextDNS. One-time import only.</p>
 
-    <div class="cors-warning" id="corsWarning" style="display:none;">
-        <strong>⚠️ Browser security is blocking the requests.</strong><br><br>
-        <strong>Solution:</strong> Download this page and open it from your computer:<br>
-        1. Right-click this page → "Save as..." → save to Downloads<br>
-        2. Open the saved HTML file in your browser<br>
-        3. Try the import again<br><br>
-        Or use the <a href="https://github.com/0xDarkMatter/aegis-blocklist/blob/master/tools/nextdns-import.sh">shell script</a> instead.
+    <div class="cors-warning">
+        <strong>⚠️ Browser tools don't work with NextDNS API</strong><br><br>
+        NextDNS blocks browser-based requests for security reasons. Use the command line instead:<br><br>
+        <strong>Windows (PowerShell):</strong><br>
+        <code style="background:#fff;padding:4px 8px;border-radius:4px;font-size:12px;display:block;margin:8px 0;word-break:break-all;">
+        irm https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.ps1 -OutFile aegis.ps1; .\aegis.ps1 -ApiKey YOUR_API_KEY -ConfigId YOUR_CONFIG_ID
+        </code>
+        <strong>Mac/Linux:</strong><br>
+        <code style="background:#fff;padding:4px 8px;border-radius:4px;font-size:12px;display:block;margin:8px 0;word-break:break-all;">
+        curl -sL https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/tools/nextdns-import.sh | bash -s YOUR_API_KEY YOUR_CONFIG_ID
+        </code>
     </div>
 
     <label>NextDNS API Key</label>
@@ -158,7 +161,9 @@
         If you only have one profile, <a href="https://my.nextdns.io" target="_blank">create a second one</a> before importing. Otherwise you'll block yourself from this tool and other sites you need!
     </div>
 
-    <button id="importBtn" onclick="startImport()">Import to NextDNS</button>
+    <p style="text-align:center;color:#6b7280;margin-top:24px;">— or try the browser tool below (may not work) —</p>
+
+    <button id="importBtn" onclick="startImport()">Try Browser Import</button>
     <button class="cancel-btn" id="cancelBtn" onclick="cancelImport()" style="display:none;">Cancel Import</button>
 
     <div class="progress" id="progress">
@@ -260,7 +265,6 @@
             stats = { added: 0, skipped: 0, errors: 0 };
             aborted = false;
             corsError = false;
-            document.getElementById('corsWarning').style.display = 'none';
 
             try {
                 status.innerHTML = '<span style="color:#8b949e">Fetching blocklist...</span>';
@@ -285,7 +289,6 @@
 
                         // If we get 5+ errors and they're all CORS, stop early
                         if (corsError && stats.errors >= 5 && stats.added === 0) {
-                            document.getElementById('corsWarning').style.display = 'block';
                             aborted = true;
                         }
                     }
@@ -301,8 +304,7 @@
                 document.getElementById('cancelBtn').style.display = 'none';
 
                 if (corsError && stats.added === 0) {
-                    document.getElementById('corsWarning').style.display = 'block';
-                    status.innerHTML = '<span class="error">Import failed due to browser security restrictions.</span>';
+                    status.innerHTML = '<span class="error">Browser import failed (CORS). Please use the PowerShell or Bash commands above.</span>';
                 } else if (aborted) {
                     status.innerHTML = '<span style="color:#6b7280">Import cancelled.</span>';
                 } else {
