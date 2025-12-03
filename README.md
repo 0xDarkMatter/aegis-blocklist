@@ -68,39 +68,40 @@ If you apply Aegis to your own devices, you'll block yourself from this GitHub r
 
 ## Quick Start
 
-### NextDNS (Recommended)
+### Pi-hole or AdGuard Home (Easiest)
 
-1. Sign up at [nextdns.io](https://nextdns.io)
-2. Enable built-in parental controls (Security → Threat Intelligence Feeds, Parental Control → Porn/Gambling)
-3. Add Aegis domains to your denylist using one of these methods:
+These self-hosted solutions support blocklist URLs natively—just paste and go:
 
-**Option A: Manual (small lists)**
-- Go to [my.nextdns.io](https://my.nextdns.io) → Denylist
-- Add domains one at a time (NextDNS has no bulk import UI)
-
-**Option B: API Script (recommended for full list)**
-```bash
-# Get your API key from: https://my.nextdns.io/account
-# Get your Config ID from: https://my.nextdns.io (shown in URL)
-
-curl -s "https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/standard.txt" | \
-  while read domain; do
-    curl -s -X PUT "https://api.nextdns.io/profiles/YOUR_CONFIG_ID/denylist" \
-      -H "X-Api-Key: YOUR_API_KEY" \
-      -H "Content-Type: application/json" \
-      -d "{\"id\":\"$domain\",\"active\":true}"
-  done
-```
-
-**Option C: Use Pi-hole/AdGuard Home instead** (supports blocklist URLs natively)
-
-### Pi-hole / AdGuard Home
-
+**Pi-hole**: Group Management → Adlists → Add new:
 ```
 https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/standard.txt
 ```
 
-### Hosts File
+**AdGuard Home**: Filters → DNS Blocklists → Add blocklist → Add a custom list:
+```
+https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/standard.txt
+```
+
+### NextDNS (Cloud - No Self-Hosting)
+
+NextDNS is excellent but **does not support custom blocklist URLs**. Options:
+
+1. **Use built-in parental controls** at [my.nextdns.io](https://my.nextdns.io):
+   - Security → Enable all Threat Intelligence Feeds
+   - Parental Control → Block Porn, Gambling, Piracy, Dating, Social Networks
+   - Privacy → Enable NextDNS Ads & Trackers Blocklist
+
+2. **Manual entry** (tedious): Denylist → add domains one at a time
+
+3. **We're working on it**: [Requesting Aegis be added as a native NextDNS blocklist](https://github.com/nextdns/blocklists)
+
+> **Why no import?** NextDNS [deliberately doesn't support custom blocklist URLs](https://help.nextdns.io/t/g9hcn3p/custom-blacklists) for scalability and safety reasons.
+
+### ControlD (Cloud Alternative)
+
+Similar to NextDNS but with more [3rd party filter options](https://docs.controld.com/docs/filters). We're requesting Aegis be added to their filter library.
+
+### Hosts File (Any Device)
 
 ```bash
 # Linux/macOS
