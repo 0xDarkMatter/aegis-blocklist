@@ -23,18 +23,22 @@ echo ""
 # Fetch existing denylist from NextDNS
 echo "Fetching existing denylist..."
 EXISTING=$(curl -sL "$API_URL" -H "X-Api-Key: $API_KEY" | grep -o '"id":"[^"]*"' | cut -d'"' -f4 | sort)
-EXISTING_COUNT=$(echo "$EXISTING" | grep -c . || echo 0)
+EXISTING_COUNT=$(echo "$EXISTING" | wc -l | tr -d ' ')
 echo "Found ${EXISTING_COUNT} existing domains"
 
 # Fetch blocklist
 echo "Fetching Aegis blocklist..."
 BLOCKLIST=$(curl -sL "$BLOCKLIST_URL" | grep -v '^#' | grep -v '^$' | grep '\.' | sort)
-BLOCKLIST_COUNT=$(echo "$BLOCKLIST" | grep -c . || echo 0)
+BLOCKLIST_COUNT=$(echo "$BLOCKLIST" | wc -l | tr -d ' ')
 echo "Found ${BLOCKLIST_COUNT} domains in blocklist"
 
 # Find domains to add (in blocklist but not in existing)
 TO_ADD=$(comm -23 <(echo "$BLOCKLIST") <(echo "$EXISTING"))
-TO_ADD_COUNT=$(echo "$TO_ADD" | grep -c . || echo 0)
+if [ -z "$TO_ADD" ]; then
+    TO_ADD_COUNT=0
+else
+    TO_ADD_COUNT=$(echo "$TO_ADD" | wc -l | tr -d ' ')
+fi
 
 echo ""
 echo "Domains to add: ${TO_ADD_COUNT}"
