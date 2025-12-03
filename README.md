@@ -71,8 +71,28 @@ If you apply Aegis to your own devices, you'll block yourself from this GitHub r
 ### NextDNS (Recommended)
 
 1. Sign up at [nextdns.io](https://nextdns.io)
-2. Enable parental controls (Porn, Gambling, etc.)
-3. Add Aegis to your denylist: [my.nextdns.io](https://my.nextdns.io) → Denylist → Import
+2. Enable built-in parental controls (Security → Threat Intelligence Feeds, Parental Control → Porn/Gambling)
+3. Add Aegis domains to your denylist using one of these methods:
+
+**Option A: Manual (small lists)**
+- Go to [my.nextdns.io](https://my.nextdns.io) → Denylist
+- Add domains one at a time (NextDNS has no bulk import UI)
+
+**Option B: API Script (recommended for full list)**
+```bash
+# Get your API key from: https://my.nextdns.io/account
+# Get your Config ID from: https://my.nextdns.io (shown in URL)
+
+curl -s "https://raw.githubusercontent.com/0xDarkMatter/aegis-blocklist/master/grades/standard.txt" | \
+  while read domain; do
+    curl -s -X PUT "https://api.nextdns.io/profiles/YOUR_CONFIG_ID/denylist" \
+      -H "X-Api-Key: YOUR_API_KEY" \
+      -H "Content-Type: application/json" \
+      -d "{\"id\":\"$domain\",\"active\":true}"
+  done
+```
+
+**Option C: Use Pi-hole/AdGuard Home instead** (supports blocklist URLs natively)
 
 ### Pi-hole / AdGuard Home
 
