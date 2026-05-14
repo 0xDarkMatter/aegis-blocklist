@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     128                                                     #
-# Generated:   2025-12-04 00:02:33 UTC                                 #
+# Entries:     130                                                     #
+# Generated:   2026-05-14 16:15:49 UTC                                 #
 # Grade:       Core                                                    #
 # Categories:  core                                                    #
 #                                                                      #
@@ -17,6 +17,7 @@
 #                                                                      #
 #======================================================================#
 
+8ch.net
 8chan.moe
 8kun.top
 altright.com
@@ -68,6 +69,7 @@ gurugossiper.com
 holla.world
 hoodsite.com
 infowars.com
+isanyoneup.com
 kaotic.com
 kik.com
 kikme.com

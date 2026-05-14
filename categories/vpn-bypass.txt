@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     164                                                     #
-# Generated:   2025-12-04 00:02:33 UTC                                 #
+# Entries:     225                                                     #
+# Generated:   2026-05-14 16:15:49 UTC                                 #
 # Grade:       Standard                                                #
 #                                                                      #
 # Domains in the VPN and Bypass Tools category                         #
@@ -20,7 +20,9 @@
 acevpn.com
 adguard-dns.io
 adguard-vpn.com
+ai-vpn.com
 airvpn.org
+amnezia.org
 astrill.com
 avast.com
 avg.com
@@ -37,6 +39,7 @@ btguard.com
 byepasshub.github.io
 cactusvpn.com
 cloak.com
+colovpn.app
 controld.com
 cryptostorm.is
 cryptostorm.org
@@ -51,35 +54,60 @@ encrypt.me
 expressvpn.com
 f-secure.com
 fastestvpn.com
+fastvpn.com
+finevpn.org
 firezone.dev
+foxyproxy.com
 freegate.org
+freenetproject.org
 freeopenvpn.org
 freevpn.me
 freevpn.org
 freevpn.us
+freevpnplanet.com
 frigatevpn.com
+geph.io
 getflix.com.au
 geti2p.net
 getlantern.org
+getoutline.org
 ghostvpn.net
+gnunet.org
 goldenfrog.com
+goodervpn.com
 goosevpn.com
 guardianproject.info
 headscale.net
 hide.me
+hideipvpn.com
 hidemy.name
+hidemyass.com
 hidemyass.net
 hidester.com
+hola.org
+homix-technologies.com
+homixvpn.homix-technologies.com
+horizonsecurity.app
+horizonvpn.org
+hotspotshield.com
+hoxx.com
+hysteria.network
 i2p2.de
 ibvpn.com
 ilikelittlekids.buzz
+ipfs.io
 ipvanish.com
 ironsocket.com
+itopvpn.com
+ivacy.com
 ivpn.net
 kaspersky.com
 lantern.io
+le-vpn.com
+letsvpn.world
 liquidvpn.com
 lokinet.org
+ltvpn.org
 malwarebytes.com
 matevpn.com
 mathprofession.buzz
@@ -93,6 +121,7 @@ nordlocker.com
 nordvpn.com
 nordvpn.net
 norton.com
+nthlink.com
 one.one.one.one
 openvpn.com
 openvpn.net
@@ -101,8 +130,12 @@ orbot.app
 orchid.com
 overplay.net
 ovpn.com
+oystervpn.com
+pandasecurity.com
 perimeter81.com
 piavpn.com
+pritunl.com
+privadovpn.com
 privateinternetaccess.com
 privateinternetaccess.net
 privatetunnel.com
@@ -114,10 +147,18 @@ proxyvpn.org
 psiphon.ca
 psiphon3.com
 purevpn.com
+qv2ray.net
 rammerhead.org
+rethinkdns.com
 rocketvpn.com
+safervpn.com
 securevpn.com
+seed4.me
 sentinel.co
+setupvpn.com
+shadowsocks.org
+simplednscrypt.org
+sing-box.sagernet.org
 skyvpn.net
 slickvpn.com
 smartdnsproxy.com
@@ -126,6 +167,7 @@ solovpn.com
 speedify.com
 strongvpn.com
 surfshark.com
+tails.net
 tailscale.com
 thundervpn.org
 titaniumnetwork.org
@@ -133,17 +175,31 @@ torbrowser.org
 torguard.net
 torproject.org
 touchvpn.net
+trendmicro.com
+tribler.org
+trojan-gfw.github.io
+trust.zone
 tunnelbear.com
+tunsafe.com
 turbovpn.co
+turbovpn.com
 turbovpn.one
 ubghub.org
 ufo-vpn.com
+ufovpn.io
+uku.im
 ultrasurf.net
 ultrasurf.us
+unblock.im
 unlocator.com
 unotelly.com
+urban-vpn.com
+v2ray.com
+v2raya.org
 veepn.com
+velovpn.com
 vpn.ac
+vpn.mozilla.org
 vpn360.com
 vpnac.com
 vpnbook.com
@@ -152,6 +208,7 @@ vpnhub.com
 vpnjack.com
 vpnmaster.com
 vpnproxy.org
+vpnproxymaster.com
 vpnrobot.com
 vpnsecure.me
 vpnster.com
@@ -161,9 +218,12 @@ vpntunnel.com
 vpnunlimited.com
 vpnunlimitedapp.com
 vpnwatch.com
+vuzevpn.com
 vyprvpn.com
+wannaflix.com
 webproxy.to
 whoer.net
+whonix.org
 windscribe.com
 windscribe.net
 wireguard.com
@@ -175,6 +235,7 @@ yogavpn.com
 zearn.buzz
 zenmate.com
 zenvpn.net
+zeronet.io
 zerotier.com
 zlvpn.com
 zoogvpn.com

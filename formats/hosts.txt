@@ -6,12 +6,12 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     628                                                     #
-# Generated:   2025-12-04 00:02:33 UTC                                 #
+# Entries:     681                                                     #
+# Generated:   2026-05-14 16:15:49 UTC                                 #
 # Grade:       Standard                                                #
 #                                                                      #
 # System hosts file format (0.0.0.0). Includes www. variants for       #
-# 1256 total lines.                                                    #
+# 1362 total lines.                                                    #
 #                                                                      #
 #======================================================================#
 
@@ -36,6 +36,8 @@
 0.0.0.0 www.4realtorrentz.com
 0.0.0.0 500casino.com
 0.0.0.0 www.500casino.com
+0.0.0.0 8ch.net
+0.0.0.0 www.8ch.net
 0.0.0.0 8chan.moe
 0.0.0.0 www.8chan.moe
 0.0.0.0 8kun.top
@@ -56,6 +58,8 @@
 0.0.0.0 www.ai-porn.net
 0.0.0.0 aidungeon.com
 0.0.0.0 www.aidungeon.com
+0.0.0.0 aihentai.co
+0.0.0.0 www.aihentai.co
 0.0.0.0 ainudes.com
 0.0.0.0 www.ainudes.com
 0.0.0.0 aiporn.net
@@ -66,6 +70,8 @@
 0.0.0.0 www.aisekai.com
 0.0.0.0 altright.com
 0.0.0.0 www.altright.com
+0.0.0.0 amnezia.org
+0.0.0.0 www.amnezia.org
 0.0.0.0 amren.com
 0.0.0.0 www.amren.com
 0.0.0.0 ana-chan.com
@@ -400,6 +406,10 @@
 0.0.0.0 www.fantasy.ai
 0.0.0.0 fastestvpn.com
 0.0.0.0 www.fastestvpn.com
+0.0.0.0 fastvpn.com
+0.0.0.0 www.fastvpn.com
+0.0.0.0 finevpn.org
+0.0.0.0 www.finevpn.org
 0.0.0.0 firezone.dev
 0.0.0.0 www.firezone.dev
 0.0.0.0 fitgirl-repacks.site
@@ -420,8 +430,12 @@
 0.0.0.0 www.fortunejack.com
 0.0.0.0 forums.red
 0.0.0.0 www.forums.red
+0.0.0.0 foxyproxy.com
+0.0.0.0 www.foxyproxy.com
 0.0.0.0 freegate.org
 0.0.0.0 www.freegate.org
+0.0.0.0 freenetproject.org
+0.0.0.0 www.freenetproject.org
 0.0.0.0 freeopenvpn.org
 0.0.0.0 www.freeopenvpn.org
 0.0.0.0 freephonespy.net
@@ -432,6 +446,8 @@
 0.0.0.0 www.freevpn.org
 0.0.0.0 freevpn.us
 0.0.0.0 www.freevpn.us
+0.0.0.0 freevpnplanet.com
+0.0.0.0 www.freevpnplanet.com
 0.0.0.0 frigatevpn.com
 0.0.0.0 www.frigatevpn.com
 0.0.0.0 gab.ai
@@ -440,6 +456,8 @@
 0.0.0.0 www.gab.com
 0.0.0.0 gamdom.com
 0.0.0.0 www.gamdom.com
+0.0.0.0 geph.io
+0.0.0.0 www.geph.io
 0.0.0.0 getflix.com.au
 0.0.0.0 www.getflix.com.au
 0.0.0.0 geti2p.net
@@ -448,10 +466,14 @@
 0.0.0.0 www.getintopc.com
 0.0.0.0 getlantern.org
 0.0.0.0 www.getlantern.org
+0.0.0.0 getoutline.org
+0.0.0.0 www.getoutline.org
 0.0.0.0 gettr.com
 0.0.0.0 www.gettr.com
 0.0.0.0 ghostvpn.net
 0.0.0.0 www.ghostvpn.net
+0.0.0.0 gnunet.org
+0.0.0.0 www.gnunet.org
 0.0.0.0 gogoanime.pe
 0.0.0.0 www.gogoanime.pe
 0.0.0.0 goingyourownway.com
@@ -486,20 +508,32 @@
 0.0.0.0 www.heartiste.org
 0.0.0.0 hide.me
 0.0.0.0 www.hide.me
+0.0.0.0 hideipvpn.com
+0.0.0.0 www.hideipvpn.com
 0.0.0.0 hidemy.name
 0.0.0.0 www.hidemy.name
+0.0.0.0 hidemyass.com
+0.0.0.0 www.hidemyass.com
 0.0.0.0 hidemyass.net
 0.0.0.0 www.hidemyass.net
 0.0.0.0 hidester.com
 0.0.0.0 www.hidester.com
 0.0.0.0 highstermobile.com
 0.0.0.0 www.highstermobile.com
+0.0.0.0 hola.org
+0.0.0.0 www.hola.org
 0.0.0.0 holla.world
 0.0.0.0 www.holla.world
 0.0.0.0 hoodsite.com
 0.0.0.0 www.hoodsite.com
+0.0.0.0 hotspotshield.com
+0.0.0.0 www.hotspotshield.com
 0.0.0.0 hoverwatch.com
 0.0.0.0 www.hoverwatch.com
+0.0.0.0 hoxx.com
+0.0.0.0 www.hoxx.com
+0.0.0.0 hysteria.network
+0.0.0.0 www.hysteria.network
 0.0.0.0 i2p2.de
 0.0.0.0 www.i2p2.de
 0.0.0.0 ibvpn.com
@@ -522,10 +556,18 @@
 0.0.0.0 www.incels.wiki
 0.0.0.0 infowars.com
 0.0.0.0 www.infowars.com
+0.0.0.0 ipfs.io
+0.0.0.0 www.ipfs.io
 0.0.0.0 ipvanish.com
 0.0.0.0 www.ipvanish.com
 0.0.0.0 ironsocket.com
 0.0.0.0 www.ironsocket.com
+0.0.0.0 isanyoneup.com
+0.0.0.0 www.isanyoneup.com
+0.0.0.0 itopvpn.com
+0.0.0.0 www.itopvpn.com
+0.0.0.0 ivacy.com
+0.0.0.0 www.ivacy.com
 0.0.0.0 ivpn.net
 0.0.0.0 www.ivpn.net
 0.0.0.0 janitorai.com
@@ -574,8 +616,12 @@
 0.0.0.0 www.ladbrokes.com.au
 0.0.0.0 lantern.io
 0.0.0.0 www.lantern.io
+0.0.0.0 le-vpn.com
+0.0.0.0 www.le-vpn.com
 0.0.0.0 leovegas.com
 0.0.0.0 www.leovegas.com
+0.0.0.0 letsvpn.world
+0.0.0.0 www.letsvpn.world
 0.0.0.0 limetorrents.info
 0.0.0.0 www.limetorrents.info
 0.0.0.0 liquidvpn.com
@@ -712,6 +758,8 @@
 0.0.0.0 www.nsfwgen.com
 0.0.0.0 nsm88.org
 0.0.0.0 www.nsm88.org
+0.0.0.0 nthlink.com
+0.0.0.0 www.nthlink.com
 0.0.0.0 nudes.ai
 0.0.0.0 www.nudes.ai
 0.0.0.0 nudify.cc
@@ -756,6 +804,8 @@
 0.0.0.0 www.overplay.net
 0.0.0.0 ovpn.com
 0.0.0.0 www.ovpn.com
+0.0.0.0 oystervpn.com
+0.0.0.0 www.oystervpn.com
 0.0.0.0 ozlotteries.com
 0.0.0.0 www.ozlotteries.com
 0.0.0.0 paddypower.com
@@ -764,6 +814,8 @@
 0.0.0.0 www.palmerbet.com
 0.0.0.0 paltalk.com
 0.0.0.0 www.paltalk.com
+0.0.0.0 pandasecurity.com
+0.0.0.0 www.pandasecurity.com
 0.0.0.0 paperhelp.org
 0.0.0.0 www.paperhelp.org
 0.0.0.0 parler.com
@@ -814,6 +866,10 @@
 0.0.0.0 www.primedice.com
 0.0.0.0 prisonplanet.com
 0.0.0.0 www.prisonplanet.com
+0.0.0.0 pritunl.com
+0.0.0.0 www.pritunl.com
+0.0.0.0 privadovpn.com
+0.0.0.0 www.privadovpn.com
 0.0.0.0 privateescorts.com.au
 0.0.0.0 www.privateescorts.com.au
 0.0.0.0 privateinternetaccess.com
@@ -846,6 +902,8 @@
 0.0.0.0 www.putlocker.vip
 0.0.0.0 putlockers.fm
 0.0.0.0 www.putlockers.fm
+0.0.0.0 qv2ray.net
+0.0.0.0 www.qv2ray.net
 0.0.0.0 racing.com
 0.0.0.0 www.racing.com
 0.0.0.0 racingpulse.com.au
@@ -866,6 +924,8 @@
 0.0.0.0 www.replika.ai
 0.0.0.0 replika.com
 0.0.0.0 www.replika.com
+0.0.0.0 rethinkdns.com
+0.0.0.0 www.rethinkdns.com
 0.0.0.0 robwaterhouse.com
 0.0.0.0 www.robwaterhouse.com
 0.0.0.0 rocketvpn.com
@@ -882,6 +942,8 @@
 0.0.0.0 www.rumble.com
 0.0.0.0 rutracker.org
 0.0.0.0 www.rutracker.org
+0.0.0.0 safervpn.com
+0.0.0.0 www.safervpn.com
 0.0.0.0 safespy.com
 0.0.0.0 www.safespy.com
 0.0.0.0 sanctioned-suicide.net
@@ -898,6 +960,8 @@
 0.0.0.0 www.seduced.ai
 0.0.0.0 seduction.com
 0.0.0.0 www.seduction.com
+0.0.0.0 seed4.me
+0.0.0.0 www.seed4.me
 0.0.0.0 seegore.com
 0.0.0.0 www.seegore.com
 0.0.0.0 seeking.com
@@ -912,12 +976,20 @@
 0.0.0.0 www.selfinjury.com
 0.0.0.0 sentinel.co
 0.0.0.0 www.sentinel.co
+0.0.0.0 setupvpn.com
+0.0.0.0 www.setupvpn.com
 0.0.0.0 sextingai.com
 0.0.0.0 www.sextingai.com
 0.0.0.0 sexyforums.com
 0.0.0.0 www.sexyforums.com
+0.0.0.0 shadowsocks.org
+0.0.0.0 www.shadowsocks.org
 0.0.0.0 shagle.com
 0.0.0.0 www.shagle.com
+0.0.0.0 simplednscrypt.org
+0.0.0.0 www.simplednscrypt.org
+0.0.0.0 sing-box.sagernet.org
+0.0.0.0 www.sing-box.sagernet.org
 0.0.0.0 skidbin.net
 0.0.0.0 www.skidbin.net
 0.0.0.0 skidrowreloaded.com
@@ -1016,6 +1088,8 @@
 0.0.0.0 www.svlogin.asia
 0.0.0.0 tab.com.au
 0.0.0.0 www.tab.com.au
+0.0.0.0 tails.net
+0.0.0.0 www.tails.net
 0.0.0.0 tailscale.com
 0.0.0.0 www.tailscale.com
 0.0.0.0 talkie-ai.com
@@ -1096,10 +1170,18 @@
 0.0.0.0 www.touchvpn.net
 0.0.0.0 trackview.net
 0.0.0.0 www.trackview.net
+0.0.0.0 trendmicro.com
+0.0.0.0 www.trendmicro.com
+0.0.0.0 tribler.org
+0.0.0.0 www.tribler.org
 0.0.0.0 tripsit.me
 0.0.0.0 www.tripsit.me
+0.0.0.0 trojan-gfw.github.io
+0.0.0.0 www.trojan-gfw.github.io
 0.0.0.0 trp.red
 0.0.0.0 www.trp.red
+0.0.0.0 trust.zone
+0.0.0.0 www.trust.zone
 0.0.0.0 trustdice.win
 0.0.0.0 www.trustdice.win
 0.0.0.0 truthsocial.com
@@ -1108,14 +1190,20 @@
 0.0.0.0 www.ttspy.com
 0.0.0.0 tunnelbear.com
 0.0.0.0 www.tunnelbear.com
+0.0.0.0 tunsafe.com
+0.0.0.0 www.tunsafe.com
 0.0.0.0 turbovpn.co
 0.0.0.0 www.turbovpn.co
+0.0.0.0 turbovpn.com
+0.0.0.0 www.turbovpn.com
 0.0.0.0 turbovpn.one
 0.0.0.0 www.turbovpn.one
 0.0.0.0 ubghub.org
 0.0.0.0 www.ubghub.org
 0.0.0.0 ufo-vpn.com
 0.0.0.0 www.ufo-vpn.com
+0.0.0.0 ufovpn.io
+0.0.0.0 www.ufovpn.io
 0.0.0.0 ukessays.com
 0.0.0.0 www.ukessays.com
 0.0.0.0 ultrasurf.net
@@ -1148,10 +1236,18 @@
 0.0.0.0 www.unotelly.com
 0.0.0.0 unstable.ai
 0.0.0.0 www.unstable.ai
+0.0.0.0 urban-vpn.com
+0.0.0.0 www.urban-vpn.com
+0.0.0.0 v2ray.com
+0.0.0.0 www.v2ray.com
+0.0.0.0 v2raya.org
+0.0.0.0 www.v2raya.org
 0.0.0.0 vdare.com
 0.0.0.0 www.vdare.com
 0.0.0.0 veepn.com
 0.0.0.0 www.veepn.com
+0.0.0.0 velovpn.com
+0.0.0.0 www.velovpn.com
 0.0.0.0 velvetklub.com
 0.0.0.0 www.velvetklub.com
 0.0.0.0 venus.chub.ai
@@ -1164,6 +1260,8 @@
 0.0.0.0 www.videoslots.com
 0.0.0.0 vpn.ac
 0.0.0.0 www.vpn.ac
+0.0.0.0 vpn.mozilla.org
+0.0.0.0 www.vpn.mozilla.org
 0.0.0.0 vpn360.com
 0.0.0.0 www.vpn360.com
 0.0.0.0 vpnac.com
@@ -1180,6 +1278,8 @@
 0.0.0.0 www.vpnmaster.com
 0.0.0.0 vpnproxy.org
 0.0.0.0 www.vpnproxy.org
+0.0.0.0 vpnproxymaster.com
+0.0.0.0 www.vpnproxymaster.com
 0.0.0.0 vpnrobot.com
 0.0.0.0 www.vpnrobot.com
 0.0.0.0 vpnsecure.me
@@ -1200,6 +1300,8 @@
 0.0.0.0 www.vpnwatch.com
 0.0.0.0 vyprvpn.com
 0.0.0.0 www.vyprvpn.com
+0.0.0.0 wannaflix.com
+0.0.0.0 www.wannaflix.com
 0.0.0.0 watchpeopledie.co
 0.0.0.0 www.watchpeopledie.co
 0.0.0.0 webproxy.to
@@ -1210,6 +1312,8 @@
 0.0.0.0 www.whatyourprice.com
 0.0.0.0 whoer.net
 0.0.0.0 www.whoer.net
+0.0.0.0 whonix.org
+0.0.0.0 www.whonix.org
 0.0.0.0 williamhill.com
 0.0.0.0 www.williamhill.com
 0.0.0.0 windscribe.com
@@ -1264,6 +1368,8 @@
 0.0.0.0 www.zenvpn.net
 0.0.0.0 zerohedge.com
 0.0.0.0 www.zerohedge.com
+0.0.0.0 zeronet.io
+0.0.0.0 www.zeronet.io
 0.0.0.0 zerotier.com
 0.0.0.0 www.zerotier.com
 0.0.0.0 zlvpn.com

@@ -1,8 +1,8 @@
 [Adblock Plus]
 ! Title: Aegis Blocklist (Standard)
 ! Homepage: https://github.com/0xDarkMatter/Vordr
-! Entries: 628
-! Generated: 2025-12-04 00:02:33 UTC
+! Entries: 681
+! Generated: 2026-05-14 16:15:49 UTC
 ! Grade: Standard
 ! Description: Child Safety DNS Blocklist - AdBlock filter format
 
@@ -17,6 +17,7 @@
 ||4everproxy.com^
 ||4realtorrentz.com^
 ||500casino.com^
+||8ch.net^
 ||8chan.moe^
 ||8kun.top^
 ||9anime.to^
@@ -27,11 +28,13 @@
 ||ai-nudes.com^
 ||ai-porn.net^
 ||aidungeon.com^
+||aihentai.co^
 ||ainudes.com^
 ||aiporn.net^
 ||airvpn.org^
 ||aisekai.com^
 ||altright.com^
+||amnezia.org^
 ||amren.com^
 ||ana-chan.com^
 ||android007.com^
@@ -199,6 +202,8 @@
 ||fansly.com^
 ||fantasy.ai^
 ||fastestvpn.com^
+||fastvpn.com^
+||finevpn.org^
 ||firezone.dev^
 ||fitgirl-repacks.site^
 ||flexispy.com^
@@ -209,22 +214,28 @@
 ||foreveralone.net^
 ||fortunejack.com^
 ||forums.red^
+||foxyproxy.com^
 ||freegate.org^
+||freenetproject.org^
 ||freeopenvpn.org^
 ||freephonespy.net^
 ||freevpn.me^
 ||freevpn.org^
 ||freevpn.us^
+||freevpnplanet.com^
 ||frigatevpn.com^
 ||gab.ai^
 ||gab.com^
 ||gamdom.com^
+||geph.io^
 ||getflix.com.au^
 ||geti2p.net^
 ||getintopc.com^
 ||getlantern.org^
+||getoutline.org^
 ||gettr.com^
 ||ghostvpn.net^
+||gnunet.org^
 ||gogoanime.pe^
 ||goingyourownway.com^
 ||goldenfrog.com^
@@ -242,13 +253,19 @@
 ||headscale.net^
 ||heartiste.org^
 ||hide.me^
+||hideipvpn.com^
 ||hidemy.name^
+||hidemyass.com^
 ||hidemyass.net^
 ||hidester.com^
 ||highstermobile.com^
+||hola.org^
 ||holla.world^
 ||hoodsite.com^
+||hotspotshield.com^
 ||hoverwatch.com^
+||hoxx.com^
+||hysteria.network^
 ||i2p2.de^
 ||ibvpn.com^
 ||idope.se^
@@ -260,8 +277,12 @@
 ||incels.me^
 ||incels.wiki^
 ||infowars.com^
+||ipfs.io^
 ||ipvanish.com^
 ||ironsocket.com^
+||isanyoneup.com^
+||itopvpn.com^
+||ivacy.com^
 ||ivpn.net^
 ||janitorai.com^
 ||joyland.ai^
@@ -286,7 +307,9 @@
 ||ladbrokes.com^
 ||ladbrokes.com.au^
 ||lantern.io^
+||le-vpn.com^
 ||leovegas.com^
+||letsvpn.world^
 ||limetorrents.info^
 ||liquidvpn.com^
 ||livegore.com^
@@ -355,6 +378,7 @@
 ||nsfwcharacter.ai^
 ||nsfwgen.com^
 ||nsm88.org^
+||nthlink.com^
 ||nudes.ai^
 ||nudify.cc^
 ||nudify.online^
@@ -377,10 +401,12 @@
 ||ovagames.com^
 ||overplay.net^
 ||ovpn.com^
+||oystervpn.com^
 ||ozlotteries.com^
 ||paddypower.com^
 ||palmerbet.com^
 ||paltalk.com^
+||pandasecurity.com^
 ||paperhelp.org^
 ||parler.com^
 ||peacefulpill.com^
@@ -406,6 +432,8 @@
 ||prettyuglylittleliar.net^
 ||primedice.com^
 ||prisonplanet.com^
+||pritunl.com^
+||privadovpn.com^
 ||privateescorts.com.au^
 ||privateinternetaccess.com^
 ||privateinternetaccess.net^
@@ -422,6 +450,7 @@
 ||purevpn.com^
 ||putlocker.vip^
 ||putlockers.fm^
+||qv2ray.net^
 ||racing.com^
 ||racingpulse.com.au^
 ||rammerhead.org^
@@ -432,6 +461,7 @@
 ||reface.ai^
 ||replika.ai^
 ||replika.com^
+||rethinkdns.com^
 ||robwaterhouse.com^
 ||rocketvpn.com^
 ||roladex.com.au^
@@ -440,6 +470,7 @@
 ||royalpanda.com^
 ||rumble.com^
 ||rutracker.org^
+||safervpn.com^
 ||safespy.com^
 ||sanctioned-suicide.net^
 ||sanctionedsuicide.com^
@@ -448,6 +479,7 @@
 ||securevpn.com^
 ||seduced.ai^
 ||seduction.com^
+||seed4.me^
 ||seegore.com^
 ||seeking.com^
 ||seekingarrangement.com^
@@ -455,9 +487,13 @@
 ||selfharm.net^
 ||selfinjury.com^
 ||sentinel.co^
+||setupvpn.com^
 ||sextingai.com^
 ||sexyforums.com^
+||shadowsocks.org^
 ||shagle.com^
+||simplednscrypt.org^
+||sing-box.sagernet.org^
 ||skidbin.net^
 ||skidrowreloaded.com^
 ||skokka.com.au^
@@ -507,6 +543,7 @@
 ||surfshark.com^
 ||svlogin.asia^
 ||tab.com.au^
+||tails.net^
 ||tailscale.com^
 ||talkie-ai.com^
 ||talkwithstranger.com^
@@ -547,16 +584,23 @@
 ||torrentz2.me^
 ||touchvpn.net^
 ||trackview.net^
+||trendmicro.com^
+||tribler.org^
 ||tripsit.me^
+||trojan-gfw.github.io^
 ||trp.red^
+||trust.zone^
 ||trustdice.win^
 ||truthsocial.com^
 ||ttspy.com^
 ||tunnelbear.com^
+||tunsafe.com^
 ||turbovpn.co^
+||turbovpn.com^
 ||turbovpn.one^
 ||ubghub.org^
 ||ufo-vpn.com^
+||ufovpn.io^
 ||ukessays.com^
 ||ultrasurf.net^
 ||ultrasurf.us^
@@ -573,14 +617,19 @@
 ||unlocator.com^
 ||unotelly.com^
 ||unstable.ai^
+||urban-vpn.com^
+||v2ray.com^
+||v2raya.org^
 ||vdare.com^
 ||veepn.com^
+||velovpn.com^
 ||velvetklub.com^
 ||venus.chub.ai^
 ||venusianarts.com^
 ||vicbet.com.au^
 ||videoslots.com^
 ||vpn.ac^
+||vpn.mozilla.org^
 ||vpn360.com^
 ||vpnac.com^
 ||vpnbook.com^
@@ -589,6 +638,7 @@
 ||vpnjack.com^
 ||vpnmaster.com^
 ||vpnproxy.org^
+||vpnproxymaster.com^
 ||vpnrobot.com^
 ||vpnsecure.me^
 ||vpnster.com^
@@ -599,11 +649,13 @@
 ||vpnunlimitedapp.com^
 ||vpnwatch.com^
 ||vyprvpn.com^
+||wannaflix.com^
 ||watchpeopledie.co^
 ||webproxy.to^
 ||webwatcher.com^
 ||whatyourprice.com^
 ||whoer.net^
+||whonix.org^
 ||williamhill.com^
 ||windscribe.com^
 ||windscribe.net^
@@ -631,6 +683,7 @@
 ||zenmate.com^
 ||zenvpn.net^
 ||zerohedge.com^
+||zeronet.io^
 ||zerotier.com^
 ||zlvpn.com^
 ||zoogvpn.com^
