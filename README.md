@@ -21,15 +21,15 @@ Major blocklists cover a lot of ground including ads, tracking, malware, adult c
 
 ### The Bypass Problem
 
-Most parental controls only work if kids can't circumvent them. When a child installs a VPN app or uses a web proxy, **all protection is gone**. Aegis blocks 300+ VPN services, proxy sites, and DNS-over-HTTPS endpoints at the DNS level—before they can be used to bypass other filters.
+Most parental controls only work if kids can't circumvent them. When a child installs a VPN app or uses a web proxy, **all protection is gone**. Aegis blocks 235+ VPN services, proxy sites, browser-extension VPNs, and DNS-over-HTTPS endpoints at the DNS level — before they can be used to bypass other filters.
 
 ### Why We Block Developer Platforms (GitHub, Vercel, etc.)
 
 **This may surprise you**: Aegis blocks GitHub, Vercel, Netlify, Replit, and similar developer platforms. Here's why.
 
-#### The 2025 Bypass Landscape
+#### The 2025–2026 Bypass Landscape
 
-Traditional VPN blocking is no longer enough. Modern bypass tools like **Interstellar**, **Doge Unblocker**, **Rammerhead**, and **Ultraviolet** are browser-in-browser proxy networks that:
+Traditional VPN blocking is no longer enough. The current generation of bypass tools — **Interstellar**, **Classroom 6x**, **Doge Unblocker v5**, **Rammerhead**, **Ultraviolet**, and the **Scramjet / Wisp / Epoxy** stack from Mercury Workshop — are browser-in-browser proxy networks that:
 
 | Capability | What It Means |
 |------------|---------------|
@@ -119,49 +119,74 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/0xDarkMatter/aegis-blo
 Get-Content "$env:TEMP\aegis.txt" | Add-Content "C:\Windows\System32\drivers\etc\hosts"
 ```
 
+## Recent Updates
+
+**v0.3.0** (May 2026)
+
+*   🛡️ **2026 bypass-tool refresh** - Added the current crop of browser-in-browser proxies: Classroom 6x (`classroom6x.us.com`), CroxyProxy family (`croxyproxy.com`, `proxycroxy.io`, `youtubeunblocked.live`), Blockaway, Bingle Proxy, YuYuProxy, FreeProxy. These run entirely inside the browser via Service Workers — one URL bypasses every DNS filter.
+*   🔌 **VPN extension vendor sweep** - 11 new vendor domains backing in-the-wild Chrome / Edge VPN extensions: AI VPN, Colo, Gooder VPN, HomixVPN, Horizon, KIZ-related, LTVPN, Unblock-Youku (`uku.im`, `unblock.im`), VuzeVPN. Pairs with registry-policy uninstall on managed devices.
+*   🪙 **Crypto wallets are now a first-class category** - Added MetaMask, Phantom, Trust Wallet, Rabby, Backpack, Solflare, plus exchange front-doors Coinbase and OKX. Wallets aren't scams *themselves*, but they're the same child-onramp threat: one social-engineering message away from losing real money.
+*   🛠️ **Modern proxy clients** - `clash-verge.org` (GUI for the Mihomo / Clash Meta core) — multi-protocol bypass that traditional VPN keyword scanning misses.
+*   🐛 **Publishing fix** - Direct-DB additions were defaulting to `status='pending'`, shipping in `categories/` but missing from `grades/*.txt` and `formats/*.txt`. Promoted to `status='blocked'` and republished.
+
+**v0.2.0** (December 2025)
+
+*   🔁 **Discovery + watchlist sweep** - 33 new domains via automated discovery pipeline and watchlist review across vpn-bypass, crypto-scams, cheating-mills, ai-adult, gambling-intl, stalkerware, self-harm, piracy, adult-services, doxxing-harassment, and predator-risk.
+*   🛠️ **Import tooling polish** - Real progress bar in `nextdns-import.sh`, clearer prompts, double-click `.bat` installer for Windows.
+
+**v0.1.0** (December 2025)
+
+*   🚀 **Initial release** - Curated child-safety DNS blocklist (~620 domains across 21 categories) focused on bypass prevention, self-harm communities, predator-risk apps, gore/shock content, AI adult content, and AU-regional coverage. Designed to *complement* Hagezi / OISD / StevenBlack rather than replace them. Four grade tiers (core / standard / strict / maximum), three formats (hosts / adblock / dnsmasq), device-lockdown guides for all major platforms.
+
+[View full changelog →](CHANGELOG.md) · [Commits →](https://github.com/0xDarkMatter/aegis-blocklist/commits/master)
+
 ## Categories
 
-**900+ domains across 21 categories:**
+**727 domains across 21 categories** (as of v0.3.0):
 
 ### Core (Always Blocked)
 | Category | Count | Description |
 |----------|-------|-------------|
-| Self-Harm | 26 | Pro-ana, thinspo, suicide method sites |
-| Gore/Shock | 24 | Death videos, shock content |
-| Predator-Risk | 47 | Omegle clones, anonymous chat apps |
-| Hate/Extremism | 46 | Neo-Nazi forums, alt-right media |
-| Incel/Blackpill | 17 | Incels.is, looksmax, blackpill forums |
-| Doxxing | 13 | Kiwi Farms, doxbin |
+| Predator-Risk | 44 | Omegle clones, anonymous chat apps |
+| Hate/Extremism | 40 | Neo-Nazi forums, alt-right media |
+| Self-Harm | 20 | Pro-ana, thinspo, suicide method sites |
+| Gore/Shock | 15 | Death videos, shock content |
+| Doxxing | 11 | Kiwi Farms, doxbin |
 
 ### Standard (Recommended)
 | Category | Count | Description |
 |----------|-------|-------------|
-| VPN/Proxy Bypass | 315 | VPN services, web proxies, gateway platforms, browser-based proxies |
-| Gambling (AU) | 35 | Australian betting sites |
-| Gambling (Intl) | 46 | International gambling |
-| Gambling (Crypto) | 35 | Crypto casinos |
-| AI Adult | 92 | Nudify, deepfakes, AI porn |
-| Cheating/Mills | 36 | Essay mills, AI bypass tools |
-| Manosphere | 31 | Red pill, MGTOW, PUA |
-| Piracy | 74 | Torrent sites, streaming |
-| Stalkerware | 66 | mSpy, FlexiSpy, trackers |
-| Adult Services | 15 | Escort directories |
+| VPN/Proxy Bypass | 235 | VPN services, web proxies, browser-in-browser proxies, VPN browser extensions |
+| AI Adult | 69 | Nudify sites, deepfakes, AI porn generators |
+| Piracy | 51 | Torrent sites, pirate streaming |
+| Stalkerware | 41 | mSpy, FlexiSpy, hidden trackers |
+| Gambling (Crypto) | 33 | Crypto casinos, on-chain betting |
+| Gambling (Intl) | 33 | International gambling sites |
+| Gambling (AU) | 31 | Australian betting sites |
+| Cheating/Mills | 20 | Essay mills, AI-bypass cheating tools |
+| Manosphere | 19 | Red pill, MGTOW, PUA |
+| Adult Services | 13 | Escort directories |
+| Incel/Blackpill | 12 | Incels.is, looksmax, blackpill forums |
+| Drug Forums | 8 | Drug-discussion forums |
+| Adult Content | 7 | Adult sites not covered by Hagezi/OISD |
 
 ### Strict (Opt-in)
 | Category | Count | Description |
 |----------|-------|-------------|
-| Weapons | - | Weapons info, 3D print files |
-| Crypto Scams | 55 | Rug pulls, pump schemes |
-| Cult Recruitment | - | Cult sites, high-control groups |
+| Crypto Scams + Wallets | 13 | Binary-options scams + child-onramp wallets (MetaMask, Phantom, etc.) |
+| Age Verification Bypass | 10 | Sites helping minors fake age checks |
+| Weapons / Explosives | 2 | Weapons info, 3D-print files |
+| Cult Recruitment | — | Reserved |
+| Dangerous Challenges | — | Reserved |
 
 ## Grades
 
 | Grade | Domains | Use Case |
 |-------|---------|----------|
-| `core.txt` | 117 | Minimum for all minors |
-| `standard.txt` | 596 | **Recommended for most families** |
-| `strict.txt` | 611 | Enhanced protection |
-| `maximum.txt` | 611 | Everything including optional |
+| `core.txt` | 130 | Minimum for all minors |
+| `standard.txt` | 702 | **Recommended for most families** |
+| `strict.txt` | 727 | Enhanced protection |
+| `maximum.txt` | 727 | Everything including optional |
 
 ## File Structure
 
