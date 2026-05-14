@@ -1,8 +1,8 @@
 [Adblock Plus]
 ! Title: Aegis Blocklist (Standard)
 ! Homepage: https://github.com/0xDarkMatter/Vordr
-! Entries: 681
-! Generated: 2026-05-14 16:15:49 UTC
+! Entries: 702
+! Generated: 2026-05-14 16:24:49 UTC
 ! Grade: Standard
 ! Description: Child Safety DNS Blocklist - AdBlock filter format
 
@@ -27,6 +27,7 @@
 ||adguard-vpn.com^
 ||ai-nudes.com^
 ||ai-porn.net^
+||ai-vpn.com^
 ||aidungeon.com^
 ||aihentai.co^
 ||ainudes.com^
@@ -74,6 +75,7 @@
 ||betternet.co^
 ||betternet.com^
 ||betvictor.com^
+||bingle.pw^
 ||bitcasino.io^
 ||bitchute.com^
 ||bitdefender.com^
@@ -82,6 +84,8 @@
 ||blackpill.me^
 ||blackpill.org^
 ||blackvpn.com^
+||blockaway.com^
+||blockaway.net^
 ||bloodandhonour.com^
 ||bluebet.com.au^
 ||bluelight.org^
@@ -114,7 +118,9 @@
 ||chipstars.bet^
 ||chitchat.gg^
 ||chub.ai^
+||clash-verge.org^
 ||clash.gg^
+||classroom6x.us.com^
 ||cloak.com^
 ||cloth-off.ai^
 ||cloth-off.io^
@@ -127,6 +133,7 @@
 ||cocospy.net^
 ||collegeessay.org^
 ||colossalbet.com.au^
+||colovpn.app^
 ||combat18.org^
 ||controld.com^
 ||copy9.com^
@@ -136,6 +143,7 @@
 ||crashino.com^
 ||crazyshit.com^
 ||createporn.com^
+||croxyproxy.com^
 ||crushon.ai^
 ||cryptostorm.is^
 ||cryptostorm.org^
@@ -219,6 +227,7 @@
 ||freenetproject.org^
 ||freeopenvpn.org^
 ||freephonespy.net^
+||freeproxy.io^
 ||freevpn.me^
 ||freevpn.org^
 ||freevpn.us^
@@ -240,6 +249,7 @@
 ||goingyourownway.com^
 ||goldenfrog.com^
 ||gomovies.to^
+||goodervpn.com^
 ||goosevpn.com^
 ||goregrish.com^
 ||grademiners.com^
@@ -261,7 +271,11 @@
 ||highstermobile.com^
 ||hola.org^
 ||holla.world^
+||homix-technologies.com^
+||homixvpn.homix-technologies.com^
 ||hoodsite.com^
+||horizonsecurity.app^
+||horizonvpn.org^
 ||hotspotshield.com^
 ||hoverwatch.com^
 ||hoxx.com^
@@ -324,6 +338,7 @@
 ||looksmax.org^
 ||lostallhope.com^
 ||lottoland.com.au^
+||ltvpn.org^
 ||luckyblock.com^
 ||luckydays.com^
 ||madbookie.com.au^
@@ -443,6 +458,7 @@
 ||proton.me^
 ||protonvpn.com^
 ||proxifier.com^
+||proxycroxy.io^
 ||proxyvpn.org^
 ||psiphon.ca^
 ||psiphon3.com^
@@ -602,8 +618,10 @@
 ||ufo-vpn.com^
 ||ufovpn.io^
 ||ukessays.com^
+||uku.im^
 ||ultrasurf.net^
 ||ultrasurf.us^
+||unblock.im^
 ||uncensored.ai^
 ||undress.app^
 ||undress.cc^
@@ -648,6 +666,7 @@
 ||vpnunlimited.com^
 ||vpnunlimitedapp.com^
 ||vpnwatch.com^
+||vuzevpn.com^
 ||vyprvpn.com^
 ||wannaflix.com^
 ||watchpeopledie.co^
@@ -674,10 +693,12 @@
 ||xvpn.io^
 ||yikyak.com^
 ||yogavpn.com^
+||youtubeunblocked.live^
 ||yts.am^
 ||yts.lt^
 ||yubo.app^
 ||yubo.live^
+||yuyuproxy.com^
 ||z-lib.org^
 ||zearn.buzz^
 ||zenmate.com^

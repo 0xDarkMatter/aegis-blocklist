@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     697                                                     #
-# Generated:   2026-05-14 16:15:49 UTC                                 #
+# Entries:     727                                                     #
+# Generated:   2026-05-14 16:24:49 UTC                                 #
 # Grade:       Maximum                                                 #
 # Categories:  core, standard, strict, optional                        #
 #                                                                      #
@@ -38,6 +38,7 @@ adguard-dns.io
 adguard-vpn.com
 ai-nudes.com
 ai-porn.net
+ai-vpn.com
 aidungeon.com
 aihentai.co
 ainudes.com
@@ -61,6 +62,8 @@ avoiceformen.com
 azirevpn.com
 b-ok.cc
 babesandescorts.com
+backpack.app
+backpack.exchange
 banned.video
 barstoolsportsbook.com
 bartleby.com
@@ -87,6 +90,7 @@ betternet.co
 betternet.com
 betvictor.com
 binarycent.com
+bingle.pw
 bitcasino.io
 bitchute.com
 bitdefender.com
@@ -95,6 +99,8 @@ bitstarz.com
 blackpill.me
 blackpill.org
 blackvpn.com
+blockaway.com
+blockaway.net
 bloodandhonour.com
 bluebet.com.au
 bluelight.org
@@ -128,7 +134,9 @@ chatspin.com
 chipstars.bet
 chitchat.gg
 chub.ai
+clash-verge.org
 clash.gg
+classroom6x.us.com
 cloak.com
 cloth-off.ai
 cloth-off.io
@@ -139,8 +147,10 @@ clothoff.net
 cloudbet.com
 cocospy.com
 cocospy.net
+coinbase.com
 collegeessay.org
 colossalbet.com.au
+colovpn.app
 combat18.org
 controld.com
 copy9.com
@@ -150,6 +160,7 @@ crackshash.com
 crashino.com
 crazyshit.com
 createporn.com
+croxyproxy.com
 crushon.ai
 cryptostorm.is
 cryptostorm.org
@@ -235,6 +246,7 @@ freegate.org
 freenetproject.org
 freeopenvpn.org
 freephonespy.net
+freeproxy.io
 freevpn.me
 freevpn.org
 freevpn.us
@@ -256,6 +268,7 @@ gogoanime.pe
 goingyourownway.com
 goldenfrog.com
 gomovies.to
+goodervpn.com
 goosevpn.com
 goregrish.com
 grademiners.com
@@ -277,7 +290,11 @@ hidester.com
 highstermobile.com
 hola.org
 holla.world
+homix-technologies.com
+homixvpn.homix-technologies.com
 hoodsite.com
+horizonsecurity.app
+horizonvpn.org
 hotspotshield.com
 hoverwatch.com
 hoxx.com
@@ -340,6 +357,7 @@ looksmax.me
 looksmax.org
 lostallhope.com
 lottoland.com.au
+ltvpn.org
 luckyblock.com
 luckydays.com
 madbookie.com.au
@@ -351,6 +369,7 @@ matevpn.com
 mathprofession.buzz
 mbitcasino.com
 mcafee.com
+metamask.io
 metaspins.com
 mgtow.com
 mgtow.tv
@@ -402,6 +421,7 @@ nudify.vip
 nyaa.si
 odysee.com
 ogrish.com
+okx.com
 ome.tv
 omegle.com
 ometv.chat
@@ -428,6 +448,7 @@ parler.com
 peacefulpill.com
 pephop.ai
 perimeter81.com
+phantom.app
 phonesheriff.com
 phonespying.com
 piavpn.com
@@ -460,6 +481,7 @@ prothinspo.com
 proton.me
 protonvpn.com
 proxifier.com
+proxycroxy.io
 proxysite.com
 proxyvpn.org
 psiphon.ca
@@ -469,6 +491,7 @@ purevpn.com
 putlocker.vip
 putlockers.fm
 qv2ray.net
+rabby.io
 racing.com
 racingpulse.com.au
 rammerhead.org
@@ -524,6 +547,7 @@ smartdnsproxy.com
 snoopza.com
 soap2day.to
 softether-download.com
+solflare.com
 solovpn.com
 solutionmanual.net
 sosuave.net
@@ -609,6 +633,7 @@ trojan-gfw.github.io
 trp.red
 trust.zone
 trustdice.win
+trustwallet.com
 truthsocial.com
 ttspy.com
 tunnelbear.com
@@ -620,8 +645,10 @@ ubghub.org
 ufo-vpn.com
 ufovpn.io
 ukessays.com
+uku.im
 ultrasurf.net
 ultrasurf.us
+unblock.im
 unblocked-games.io
 unblocked-games.net
 unblockedgames24h.com
@@ -673,6 +700,7 @@ vpntunnel.com
 vpnunlimited.com
 vpnunlimitedapp.com
 vpnwatch.com
+vuzevpn.com
 vyprvpn.com
 wannaflix.com
 watchpeopledie.co
@@ -699,10 +727,12 @@ xvideos.com
 xvpn.io
 yikyak.com
 yogavpn.com
+youtubeunblocked.live
 yts.am
 yts.lt
 yubo.app
 yubo.live
+yuyuproxy.com
 z-lib.org
 zearn.buzz
 zenmate.com

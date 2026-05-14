@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     225                                                     #
-# Generated:   2026-05-14 16:15:49 UTC                                 #
+# Entries:     235                                                     #
+# Generated:   2026-05-14 16:24:49 UTC                                 #
 # Grade:       Standard                                                #
 #                                                                      #
 # Domains in the VPN and Bypass Tools category                         #
@@ -30,17 +30,23 @@ avira.com
 azirevpn.com
 betternet.co
 betternet.com
+bingle.pw
 bitdefender.com
 blackvpn.com
+blockaway.com
+blockaway.net
 bolehvpn.net
 boxpn.com
 browsec.com
 btguard.com
 byepasshub.github.io
 cactusvpn.com
+clash-verge.org
+classroom6x.us.com
 cloak.com
 colovpn.app
 controld.com
+croxyproxy.com
 cryptostorm.is
 cryptostorm.org
 cyberghost.com
@@ -61,6 +67,7 @@ foxyproxy.com
 freegate.org
 freenetproject.org
 freeopenvpn.org
+freeproxy.io
 freevpn.me
 freevpn.org
 freevpn.us
@@ -143,6 +150,7 @@ privatevpn.com
 proton.me
 protonvpn.com
 proxifier.com
+proxycroxy.io
 proxyvpn.org
 psiphon.ca
 psiphon3.com
@@ -232,6 +240,8 @@ witopia.com
 worldvpn.net
 xvpn.io
 yogavpn.com
+youtubeunblocked.live
+yuyuproxy.com
 zearn.buzz
 zenmate.com
 zenvpn.net

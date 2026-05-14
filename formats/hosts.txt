@@ -6,12 +6,12 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     681                                                     #
-# Generated:   2026-05-14 16:15:49 UTC                                 #
+# Entries:     702                                                     #
+# Generated:   2026-05-14 16:24:49 UTC                                 #
 # Grade:       Standard                                                #
 #                                                                      #
 # System hosts file format (0.0.0.0). Includes www. variants for       #
-# 1362 total lines.                                                    #
+# 1404 total lines.                                                    #
 #                                                                      #
 #======================================================================#
 
@@ -56,6 +56,8 @@
 0.0.0.0 www.ai-nudes.com
 0.0.0.0 ai-porn.net
 0.0.0.0 www.ai-porn.net
+0.0.0.0 ai-vpn.com
+0.0.0.0 www.ai-vpn.com
 0.0.0.0 aidungeon.com
 0.0.0.0 www.aidungeon.com
 0.0.0.0 aihentai.co
@@ -150,6 +152,8 @@
 0.0.0.0 www.betternet.com
 0.0.0.0 betvictor.com
 0.0.0.0 www.betvictor.com
+0.0.0.0 bingle.pw
+0.0.0.0 www.bingle.pw
 0.0.0.0 bitcasino.io
 0.0.0.0 www.bitcasino.io
 0.0.0.0 bitchute.com
@@ -166,6 +170,10 @@
 0.0.0.0 www.blackpill.org
 0.0.0.0 blackvpn.com
 0.0.0.0 www.blackvpn.com
+0.0.0.0 blockaway.com
+0.0.0.0 www.blockaway.com
+0.0.0.0 blockaway.net
+0.0.0.0 www.blockaway.net
 0.0.0.0 bloodandhonour.com
 0.0.0.0 www.bloodandhonour.com
 0.0.0.0 bluebet.com.au
@@ -230,8 +238,12 @@
 0.0.0.0 www.chitchat.gg
 0.0.0.0 chub.ai
 0.0.0.0 www.chub.ai
+0.0.0.0 clash-verge.org
+0.0.0.0 www.clash-verge.org
 0.0.0.0 clash.gg
 0.0.0.0 www.clash.gg
+0.0.0.0 classroom6x.us.com
+0.0.0.0 www.classroom6x.us.com
 0.0.0.0 cloak.com
 0.0.0.0 www.cloak.com
 0.0.0.0 cloth-off.ai
@@ -256,6 +268,8 @@
 0.0.0.0 www.collegeessay.org
 0.0.0.0 colossalbet.com.au
 0.0.0.0 www.colossalbet.com.au
+0.0.0.0 colovpn.app
+0.0.0.0 www.colovpn.app
 0.0.0.0 combat18.org
 0.0.0.0 www.combat18.org
 0.0.0.0 controld.com
@@ -274,6 +288,8 @@
 0.0.0.0 www.crazyshit.com
 0.0.0.0 createporn.com
 0.0.0.0 www.createporn.com
+0.0.0.0 croxyproxy.com
+0.0.0.0 www.croxyproxy.com
 0.0.0.0 crushon.ai
 0.0.0.0 www.crushon.ai
 0.0.0.0 cryptostorm.is
@@ -440,6 +456,8 @@
 0.0.0.0 www.freeopenvpn.org
 0.0.0.0 freephonespy.net
 0.0.0.0 www.freephonespy.net
+0.0.0.0 freeproxy.io
+0.0.0.0 www.freeproxy.io
 0.0.0.0 freevpn.me
 0.0.0.0 www.freevpn.me
 0.0.0.0 freevpn.org
@@ -482,6 +500,8 @@
 0.0.0.0 www.goldenfrog.com
 0.0.0.0 gomovies.to
 0.0.0.0 www.gomovies.to
+0.0.0.0 goodervpn.com
+0.0.0.0 www.goodervpn.com
 0.0.0.0 goosevpn.com
 0.0.0.0 www.goosevpn.com
 0.0.0.0 goregrish.com
@@ -524,8 +544,16 @@
 0.0.0.0 www.hola.org
 0.0.0.0 holla.world
 0.0.0.0 www.holla.world
+0.0.0.0 homix-technologies.com
+0.0.0.0 www.homix-technologies.com
+0.0.0.0 homixvpn.homix-technologies.com
+0.0.0.0 www.homixvpn.homix-technologies.com
 0.0.0.0 hoodsite.com
 0.0.0.0 www.hoodsite.com
+0.0.0.0 horizonsecurity.app
+0.0.0.0 www.horizonsecurity.app
+0.0.0.0 horizonvpn.org
+0.0.0.0 www.horizonvpn.org
 0.0.0.0 hotspotshield.com
 0.0.0.0 www.hotspotshield.com
 0.0.0.0 hoverwatch.com
@@ -650,6 +678,8 @@
 0.0.0.0 www.lostallhope.com
 0.0.0.0 lottoland.com.au
 0.0.0.0 www.lottoland.com.au
+0.0.0.0 ltvpn.org
+0.0.0.0 www.ltvpn.org
 0.0.0.0 luckyblock.com
 0.0.0.0 www.luckyblock.com
 0.0.0.0 luckydays.com
@@ -888,6 +918,8 @@
 0.0.0.0 www.protonvpn.com
 0.0.0.0 proxifier.com
 0.0.0.0 www.proxifier.com
+0.0.0.0 proxycroxy.io
+0.0.0.0 www.proxycroxy.io
 0.0.0.0 proxyvpn.org
 0.0.0.0 www.proxyvpn.org
 0.0.0.0 psiphon.ca
@@ -1206,10 +1238,14 @@
 0.0.0.0 www.ufovpn.io
 0.0.0.0 ukessays.com
 0.0.0.0 www.ukessays.com
+0.0.0.0 uku.im
+0.0.0.0 www.uku.im
 0.0.0.0 ultrasurf.net
 0.0.0.0 www.ultrasurf.net
 0.0.0.0 ultrasurf.us
 0.0.0.0 www.ultrasurf.us
+0.0.0.0 unblock.im
+0.0.0.0 www.unblock.im
 0.0.0.0 uncensored.ai
 0.0.0.0 www.uncensored.ai
 0.0.0.0 undress.app
@@ -1298,6 +1334,8 @@
 0.0.0.0 www.vpnunlimitedapp.com
 0.0.0.0 vpnwatch.com
 0.0.0.0 www.vpnwatch.com
+0.0.0.0 vuzevpn.com
+0.0.0.0 www.vuzevpn.com
 0.0.0.0 vyprvpn.com
 0.0.0.0 www.vyprvpn.com
 0.0.0.0 wannaflix.com
@@ -1350,6 +1388,8 @@
 0.0.0.0 www.yikyak.com
 0.0.0.0 yogavpn.com
 0.0.0.0 www.yogavpn.com
+0.0.0.0 youtubeunblocked.live
+0.0.0.0 www.youtubeunblocked.live
 0.0.0.0 yts.am
 0.0.0.0 www.yts.am
 0.0.0.0 yts.lt
@@ -1358,6 +1398,8 @@
 0.0.0.0 www.yubo.app
 0.0.0.0 yubo.live
 0.0.0.0 www.yubo.live
+0.0.0.0 yuyuproxy.com
+0.0.0.0 www.yuyuproxy.com
 0.0.0.0 z-lib.org
 0.0.0.0 www.z-lib.org
 0.0.0.0 zearn.buzz

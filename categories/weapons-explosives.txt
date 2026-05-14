@@ -7,7 +7,7 @@
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
 # Entries:     2                                                       #
-# Generated:   2026-05-14 16:15:49 UTC                                 #
+# Generated:   2026-05-14 16:24:49 UTC                                 #
 # Grade:       Strict                                                  #
 #                                                                      #
 # Domains in the Weapons and Explosives category                       #

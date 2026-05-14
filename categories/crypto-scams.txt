@@ -6,8 +6,8 @@
 # Child Safety DNS Blocklist System                                    #
 # https://github.com/0xDarkMatter/Vordr                                #
 #                                                                      #
-# Entries:     8                                                       #
-# Generated:   2026-05-14 16:15:49 UTC                                 #
+# Entries:     13                                                      #
+# Generated:   2026-05-14 16:24:49 UTC                                 #
 # Grade:       Strict                                                  #
 #                                                                      #
 # Domains in the Crypto Scams category                                 #
@@ -17,8 +17,13 @@
 123tradeoption.com
 24livetrade.com
 alphaoptionstrade.com
+backpack.app
+backpack.exchange
 binarycent.com
 coinbase.com
 metamask.io
+okx.com
 phantom.app
+rabby.io
+solflare.com
 trustwallet.com
